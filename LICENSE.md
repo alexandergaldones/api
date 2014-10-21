@@ -1,27 +1,4 @@
-API Examples
-==============
-
-Examples for how to use the Coins.ph API are provided in this repository. Additionally, API docs can be found at [the wiki](https://github.com/coinsph/api/wiki). For issues, feature requests, and suggestions, please file an [issue](https://github.com/coinsph/api/issues).
-
-## Contributing
-
-Please feel free to contribute examples of how to use the API for different languages. If a language is not yet in the root project directory, please create a directory and name it with the language that the examples in that directory use. For instance:
-
-```
-.gitignore
-README.md
-python/
-  hmac.py
-  oauth.py
-java/
-  hmac.java
-  oauth.java
-... and so on
-```
-
-For each example, please include a link (as a comment/docstring) to the documentation page that it implements.
-
-## License
+# License
 
 API Examples are MIT licensed.
 
