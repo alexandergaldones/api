@@ -110,7 +110,7 @@ Certain establishments of this category only accepts payouts within a certain ra
 
 #### Fees
 
-Establishments of this category usually have processing fees based on specific ranges (ie. PHP 0 - PHP 1000 and so on). These fees vary per establishment and are usually already provided in the [Sell Quote API](https://github.com/coinsph/api/wiki/05-Send-Money-API#getting-quotes). For more information about particular establishment fees, please refer to their websites.
+Establishments of this category usually have processing fees based on specific ranges (ie. PHP 0 - PHP 1000 and so on). These fees vary per establishment and are usually already provided in the [Sell Quote API](sell-api.html#getting-quotes). For more information about particular establishment fees, please refer to their websites.
 
 ### Mobile money
 
@@ -167,7 +167,7 @@ Certain services of this category only accepts payouts within a certain range. T
 
 #### Fees
 
-Smart Money Card doesn't have any transaction fees. Globe GCash, on the other hand, have range specific transaction fees. These fees are already provided for you by the [Sell Quote API](https://github.com/coinsph/api/wiki/05-Send-Money-API#getting-quotes). Please refer to the Globe GCash website for more information about their transaction fees.
+Smart Money Card doesn't have any transaction fees. Globe GCash, on the other hand, have range specific transaction fees. These fees are already provided for you by the [Sell Quote API](sell-api.html#getting-quotes). Please refer to the Globe GCash website for more information about their transaction fees.
 
 ### Door to Door Delivery
 
@@ -226,4 +226,4 @@ Services of this category only accepts payouts within a certain range. These val
 
 #### Fees
 
-2Go Quikcash has a fixed transaction fee of PHP 120. LBC Pesopak, on the other hand, have range specific transaction fees. These fees are already provided for you by the [Sell Quote API](https://github.com/coinsph/api/wiki/05-Send-Money-API#getting-quotes). Please refer to the LBC Pesopak website for more information about their transaction fees.
+2Go Quikcash has a fixed transaction fee of PHP 120. LBC Pesopak, on the other hand, have range specific transaction fees. These fees are already provided for you by the [Sell Quote API](sell-api.html#getting-quotes). Please refer to the LBC Pesopak website for more information about their transaction fees.

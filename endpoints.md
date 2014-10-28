@@ -1,4 +1,4 @@
-## [Send Money API](https://github.com/coinsph/api/wiki/05-Send-Money-API)
+# [Send Money API](sell-api.html)
 Coins Send Money API is used to generate Sell orders.
 
 A unique Bitcoin Wallet address is generated for each order, and once payment is made the funds will be deposited into the specified bank account or other payment outlet.
@@ -27,7 +27,7 @@ A unique Bitcoin Wallet address is generated for each order, and once payment is
     </tr>
 </table>
 
-## [Buy Order API](https://github.com/coinsph/api/wiki/06-Buy-API)
+## [Buy Order API](buy-api.html)
 
 Coins Buy Order API is used to generate, view, and edit Buy Orders.
 
@@ -67,7 +67,7 @@ Coins Buy Order API is used to generate, view, and edit Buy Orders.
     </tr>
 </table>
 
-## [Merchant API](https://github.com/coinsph/coins-api/wiki/Merchant-API)
+## [Merchant API](merchant-api.html)
 Coins Merchant API is used by developers to generate a payment page.
 
 <table>

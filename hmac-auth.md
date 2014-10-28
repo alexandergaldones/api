@@ -1,6 +1,6 @@
 # HMAC Authentication
 
-HMAC Authentication can be used for authentication through the coins.ph API as yourself. While you can use this type of authentication for executing requests from users of your app (aside from yourself), we do not recommend it and would suggest to look into [OAuth2 Authentication](https://github.com/coinsph/api/wiki/03-Authentication-with-client-a-token-OAuth2) instead, especially for client-side applications. This is because HMAC requires you to use your API secret to sign requests.
+HMAC Authentication can be used for authentication through the coins.ph API as yourself. While you can use this type of authentication for executing requests from users of your app (aside from yourself), we do not recommend it and would suggest to look into [OAuth2 Authentication](oauth-auth.html) instead, especially for client-side applications. This is because HMAC requires you to use your API secret to sign requests.
 
 You can get your API Key and secret by clicking "show" in your desired application in [API Access Dashboard](https://coins.ph/user/api).
 
@@ -53,6 +53,6 @@ Each HMAC requests expect the following HTTP Headers:
 
 * **ACCESS_KEY** - Select `show` on your chosen application's [API Access](https://coins.ph/user/api) dashboard. This is the API Key as displayed on the dialog.
 * **ACCESS_SIGNATURE** - An HMAC-SHA256 hash of the nonce concatenated with the full URL and body of the HTTP request, signed using your API secret.
-* **ACCESS_NONCE** - A number that can only be used once per user. See [Authentication](https://github.com/coinsph/api/wiki/02-API-Access#use-a-nonce)
+* **ACCESS_NONCE** - A number that can only be used once per user. See [Authentication](auth.html)
 
 Additional headers may be required depending on the API call you are making. For instance, POST requests require the header `Content-Type: application/json`, while GET requests do not expect this header.

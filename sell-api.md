@@ -20,7 +20,7 @@ https://coins.ph/api/v2/sellquote
 
 * **btc_amount** - The total amount in Bitcoins, as provided by the user. _NOTE: The amount is in BTC format (900mbtc = .9 BTC)._
 * **currency** - An ISO 4217 fiat currency symbol (ie, "PHP", "USD", "SGD") to which the BTC price will be converted into.
-* **full** (optional, defaults to `False`) - Show the `required_fields` for each payment outlet as an array of {`id`, `name`} objects. This accepts either `True` or `False`. When not provided or if the value is `False`, the `required_fields` for each Payment Outlet are returned as an array of `id` strings. For more information about `required_fields`, please refer to the [Payment Outlet Documentation](https://github.com/coinsph/api/wiki/07-Payment-Outlets).
+* **full** (optional, defaults to `False`) - Show the `required_fields` for each payment outlet as an array of {`id`, `name`} objects. This accepts either `True` or `False`. When not provided or if the value is `False`, the `required_fields` for each Payment Outlet are returned as an array of `id` strings. For more information about `required_fields`, please refer to the [Payment Outlet Documentation](payment-outlet.html).
 
 ### Example Request
 
@@ -186,7 +186,7 @@ Sending money and selling Bitcoins use the same API endpoint. This endpoint supp
 
 ### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](https://github.com/coinsph/coins-examples/wiki/02-API-Access) for further details.
+This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
 
 ### Creating Sell Orders
 
@@ -203,9 +203,9 @@ This endpoint requires authentication. Please see [API Authentication](https://g
 
 #### HMAC HTTP Headers
 
-* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_NONCE**: A one time use number. Please see [nonce](https://github.com/coinsph/api/wiki/02-API-Access#use-a-nonce) for more information.
+* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_NONCE**: A one time use number. Please see [nonce](auth.html) for more information.
 
 #### Endpoint
 
@@ -216,7 +216,7 @@ This endpoint requires authentication. Please see [API Authentication](https://g
 * **btc_amount** - Transaction total amount in bitcoins.   _NOTE: The amount is in BTC format (900mbtc = .9 BTC)._
 * **currency** - ISO 4217 fiat currency symbol (ie, "PHP", "USD", "SGD").
 * **payment_outlet** - The **outlet_id** as provided by sell qoute api.
-* **other field** - Payment outlets have different required fields such as, and are not limited to, `first_name`, `bank_account_name`, `bank_account_number`, etc. These are listed as **required_fields** when retrieving a sell quote. Please refer to the [Payment Outlet Documentation](https://github.com/coinsph/api/wiki/07-Payment-Outlets) and the [Sell Quote Documentation](https://github.com/coinsph/api/wiki/05-Send-Money-API#getting-quotes) for more information.
+* **other field** - Payment outlets have different required fields such as, and are not limited to, `first_name`, `bank_account_name`, `bank_account_number`, etc. These are listed as **required_fields** when retrieving a sell quote. Please refer to the [Payment Outlet Documentation](payment-outlets.html) and the [Sell Quote Documentation](sell-api.html) for more information.
 
 #### Example Request
 
@@ -256,7 +256,7 @@ curl -X POST -H 'Content-Type: application/json' -H 'ACCESS_KEY: yourtoken' -H '
 
 #### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](https://github.com/coinsph/coins-examples/wiki/02-API-Access) for further details.
+This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
 
 #### HTTP Method
 
@@ -272,9 +272,9 @@ This endpoint requires authentication. Please see [API Authentication](https://g
 
 #### HMAC HTTP Headers
 
-* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_NONCE**: A one time use number. Please see [nonce](https://github.com/coinsph/api/wiki/02-API-Access#use-a-nonce) for more information.
+* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_NONCE**: A one time use number. Please see [nonce](auth.html) for more information.
 
 #### Example Request
 

@@ -189,7 +189,7 @@ This endpoint supports creating new buy orders, retrieving existing ones, and ma
 
 ### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](https://github.com/coinsph/coins-examples/wiki/02-API-Access) for further details.
+This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
 
 ### Creating Buy Orders
 
@@ -207,9 +207,9 @@ This endpoint requires authentication. Please see [API Authentication](https://g
 
 #### HMAC HTTP Headers
 
-* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_NONCE**: A one time use number. Please see [nonce](https://github.com/coinsph/api/wiki/02-API-Access#use-a-nonce) for more information.
+* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_NONCE**: A one time use number. Please see [nonce](auth.html) for more information.
 
 #### Endpoint
 
@@ -258,7 +258,7 @@ curl -X POST\
 
 #### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](https://github.com/coinsph/coins-examples/wiki/02-API-Access) for further details.
+This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
 
 #### HTTP Method
 
@@ -274,9 +274,9 @@ This endpoint requires authentication. Please see [API Authentication](https://g
 
 #### HMAC HTTP Headers
 
-* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_NONCE**: A one time use number. Please see [nonce](https://github.com/coinsph/api/wiki/02-API-Access#use-a-nonce) for more information.
+* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_NONCE**: A one time use number. Please see [nonce](auth.html) for more information.
 
 #### Example Request
 
@@ -313,7 +313,7 @@ curl -X GET https://coins.ph/api/v2/buyorder/1o2r3d4e5r
 
 #### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](https://github.com/coinsph/coins-examples/wiki/02-API-Access) for further details.
+This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
 
 #### HTTP Method
 
@@ -325,9 +325,9 @@ This endpoint requires authentication. Please see [API Authentication](https://g
 
 #### HMAC HTTP Headers
 
-* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_NONCE**: A one time use number. Please see [nonce](https://github.com/coinsph/api/wiki/02-API-Access#use-a-nonce) for more information.
+* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_NONCE**: A one time use number. Please see [nonce](auth.html) for more information.
 
 #### Endpoint
 
@@ -368,7 +368,7 @@ curl -X DELETE https://coins.ph/api/v2/buyorder/1o2r3d4e5r
 
 #### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](https://github.com/coinsph/coins-examples/wiki/02-API-Access) for further details.
+This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
 
 #### HTTP Method
 
@@ -380,9 +380,9 @@ This endpoint requires authentication. Please see [API Authentication](https://g
 
 #### HMAC HTTP Headers
 
-* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](https://github.com/coinsph/api/wiki/04-Authentication-with-API-Key---Secret#making-requests) for more information.
-* **ACCESS_NONCE**: A one time use number. Please see [nonce](https://github.com/coinsph/api/wiki/02-API-Access#use-a-nonce) for more information.
+* **ACCESS_KEY**: `applicationclientid`. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_SIGNATURE**: Computed HMAC hash of the request. Please see the [HMAC guide](hmac-auth.html) for more information.
+* **ACCESS_NONCE**: A one time use number. Please see [nonce](auth.html) for more information.
 
 #### Endpoint
 

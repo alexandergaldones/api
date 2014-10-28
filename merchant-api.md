@@ -26,7 +26,7 @@ GET Parameters
 * **ccy** - currency (ie, "PHP", "USD", "SGD")
 * **description** - description shown to user on the checkout payment screen
 * **email** - email address to send confirmation and use to identify user support issues.
-* **digest** - hash to validate origin merchant. (see **[Authentication](https://github.com/coinsph/coinsph/wiki/Merchant-API#authentication)**)
+* **digest** - hash to validate origin merchant. (see **[Authentication](merchant-api.html#authentication)**)
 * **custom** - a pass-through parameter that is not secure
 
 ### Example

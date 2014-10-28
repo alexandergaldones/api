@@ -49,7 +49,7 @@ The parameters are not appended to the url as GET parameters (ie. first paramete
 
 ### Client Side Flow
 
-This flow is commonly used for applications that store the token in the client. Follow the steps described in [Application Authorization Flow](https://github.com/coinsph/api/wiki/03-Authentication-with-client-a-token-OAuth2#application-authorization-flow). Once you retrieve the `access_token`, it can be used by adding this HTTP header for every API call:
+This flow is commonly used for applications that store the token in the client. Follow the steps described in [Application Authorization Flow](oauth-auth.html#application-authorization-flow). Once you retrieve the `access_token`, it can be used by adding this HTTP header for every API call:
 
 ```
 Authorization: Bearer youraccesstoken
@@ -96,4 +96,4 @@ Example of a common server-side flow:
 Once the user or your application server has the `access_token` an API call can be made with the following required HTTP headers:
 
 * Authorization - Authorization type followed by the access token ie. `Bearer token`
-* nonce - A number that can only be used once per user. See [Authentication](https://github.com/coinsph/api/wiki/02-API-Access#use-a-nonce)
+* nonce - A number that can only be used once per user. See [Authentication](auth.html#use-a-nonce)
