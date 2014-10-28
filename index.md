@@ -26,30 +26,30 @@ API access is turned off by default on all accounts. If you decide to use our AP
 
 ## Getting started
 
-* [Authentication](https://github.com/coinsph/api/wiki/02-API-Access)
-* [API Index](https://github.com/coinsph/api/wiki/API-Index)
+* [Authentication](auth.html)
+* [Endpoints](endpoints.html)
 * [Register an application](https://coins.ph/user/api)
 
 ## Send Money API
 
-* [Sell Quotes](https://github.com/coinsph/api/wiki/05-Send-Money-API#getting-quotes)
-* [Create Sell Order](https://github.com/coinsph/api/wiki/05-Send-Money-API#creating-sell-orders)
-* [View Sell Order](https://github.com/coinsph/api/wiki/05-Send-Money-API#retrieving-existing-sell-orders)
-* [Payment Outlets](https://github.com/coinsph/api/wiki/07-Payment-Outlets)
+* [Sell Quotes](sell-api.html#getting-quotes)
+* [Create Sell Order](sell-api.html)
+* [View Sell Order](sell-api.html)
+* [Payment Outlets](sell-api.html)
 
 ## Buy Order API
 
-* [Buy Quotes](https://github.com/coinsph/api/wiki/06-Buy-API#getting-quotes)
-* [Create Buy Order](https://github.com/coinsph/api/wiki/06-Buy-API#creating-buy-orders)
-* [View Buy Order](https://github.com/coinsph/api/wiki/06-Buy-API#retrieving-existing-buy-orders)
-* [Cancel Buy Order](https://github.com/coinsph/api/wiki/06-Buy-API#cancelling-a-buy-order)
-* [Mark Buy Order as Paid](https://github.com/coinsph/api/wiki/06-Buy-API#marking-a-buy-order-as-paid)
+* [Buy Quotes](buy-api.html)
+* [Create Buy Order](buy-api.html)
+* [View Buy Order](buy-api.html)
+* [Cancel Buy Order](buy-api.html)
+* [Mark Buy Order as Paid](buy-api.html)
 
 ## Merchant API
 
 If are using coins.ph to accept Bitcoin payments, please sign up here:
 
 * [Merchant tools overview](https://coins.ph/merchants)
-* [Merchant API reference](https://github.com/coinsph/api/wiki/Merchant-API)
+* [Merchant API reference](merchant-api.html)
 * [Magento plugin](https://github.com/coinsph/coins-magento)
 * [Merchant registration](https://coins.ph/merchants/signup)
