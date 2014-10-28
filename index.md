@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Coins API Reference.
 
 Coins.ph provides a simple and powerful REST API to perform Bitcoin backed transactions in Asia.
