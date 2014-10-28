@@ -20,7 +20,7 @@ https://coins.ph/api/v2/sellquote
 
 * **btc_amount** - The total amount in Bitcoins, as provided by the user. _NOTE: The amount is in BTC format (900mbtc = .9 BTC)._
 * **currency** - An ISO 4217 fiat currency symbol (ie, "PHP", "USD", "SGD") to which the BTC price will be converted into.
-* **full** (optional, defaults to `False`) - Show the `required_fields` for each payment outlet as an array of {`id`, `name`} objects. This accepts either `True` or `False`. When not provided or if the value is `False`, the `required_fields` for each Payment Outlet are returned as an array of `id` strings. For more information about `required_fields`, please refer to the [Payment Outlet Documentation](payment-outlet.html).
+* **full** (optional, defaults to `False`) - Show the `required_fields` for each payment outlet as an array of {`id`, `name`} objects. This accepts either `True` or `False`. When not provided or if the value is `False`, the `required_fields` for each Payment Outlet are returned as an array of `id` strings. For more information about `required_fields`, please refer to the [Payment Outlet Documentation](payment-outlets.html).
 
 ### Example Request
 
