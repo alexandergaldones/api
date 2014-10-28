@@ -33,17 +33,17 @@ API access is turned off by default on all accounts. If you decide to use our AP
 ## Send Money API
 
 * [Sell Quotes](sell-api.html#getting-quotes)
-* [Create Sell Order](sell-api.html)
-* [View Sell Order](sell-api.html)
-* [Payment Outlets](sell-api.html)
+* [Create Sell Order](sell-api.html#creating-sell-orders)
+* [View Sell Order](sell-api.html#retrieving-existing-sell-orders)
+* [Payment Outlets](payment-outlets.md)
 
 ## Buy Order API
 
-* [Buy Quotes](buy-api.html)
-* [Create Buy Order](buy-api.html)
-* [View Buy Order](buy-api.html)
-* [Cancel Buy Order](buy-api.html)
-* [Mark Buy Order as Paid](buy-api.html)
+* [Buy Quotes](buy-api.html#getting-quotes)
+* [Create Buy Order](buy-api.html#creating-buy-orders)
+* [View Buy Order](buy-api.html#retrieving-existing-buy-orders)
+* [Cancel Buy Order](buy-api.html#cancelling-a-buy-order)
+* [Mark Buy Order as Paid](buy-api.html#marking-a-buy-order-as-paid)
 
 ## Merchant API
 
