@@ -3,8 +3,9 @@
 Coins.ph provides a simple and powerful REST API to perform Bitcoin backed transactions in Asia.
 
 We currently serve the following markets:
-* [Philippines] (https://coins.ph)
-* [Thailand] (https://coins.co.th)
+
+* [Philippines](https://coins.ph)
+* [Thailand](https://coins.co.th)
 
 Some of the things you can do with the coins.ph API:
 
