@@ -35,7 +35,7 @@ API access is turned off by default on all accounts. If you decide to use our AP
 * [Sell Quotes](sell-api.html#getting-quotes)
 * [Create Sell Order](sell-api.html#creating-sell-orders)
 * [View Sell Order](sell-api.html#retrieving-existing-sell-orders)
-* [Payment Outlets](payment-outlets.md)
+* [Payment Outlets](payment-outlets.html)
 
 ## Buy Order API
 
