@@ -1,7 +1,7 @@
 API Examples
 ==============
 
-Examples for how to use the Coins.ph API are provided in this repository. Additionally, API docs can be found at [the wiki](https://github.com/coinsph/api/wiki). For issues, feature requests, and suggestions, please file an [issue](https://github.com/coinsph/api/issues).
+Examples for how to use the Coins.ph API are provided in this repository. Additionally, API docs can be found at [the documentation page](http://coinsph.github.io/api). For issues, feature requests, and suggestions, please file an [issue](https://github.com/coinsph/api/issues).
 
 ## Contributing
 
