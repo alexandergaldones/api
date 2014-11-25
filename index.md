@@ -16,7 +16,7 @@ Some of the things you can do with the coins.ph API:
 
 All requests go over https. The base URL is `https://coins.ph/api/v2/` and endpoints are in the format `https://coins.ph/api/v2/<endpoint>`. For instance, the Buy Quote API can be accessed through `https://coins.ph/api/v2/buyquote`. Please refer to a particular endpoint's documentation for more usage examples.
 
-For API support you can post a question in our [issue tracker](https://github.com/coinsph/api-docs/issues).
+For API support you can post a question in our [issue tracker](https://github.com/coinsph/api/issues).
 
 ## Creating a new application
 
