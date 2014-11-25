@@ -13,7 +13,7 @@ layout: default
 
 <script>
   Flatdoc.run({
-    fetcher: Flatdoc.github('coinsph/api', 'pagename.md?ref=gh-pages')
+    fetcher: Flatdoc.github('coinsph/api-docs', 'pagename.md?ref=gh-pages')
   });
 </script>
 ```
@@ -66,7 +66,7 @@ layout: default
 
 <script>
   Flatdoc.run({
-    fetcher: Flatdoc.github('coinsph/api', 'v1/buy-api.md?ref=gh-pages')
+    fetcher: Flatdoc.github('coinsph/api-docs', 'v1/buy-api.md?ref=gh-pages')
   });
 </script>
 ```
