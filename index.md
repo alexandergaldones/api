@@ -45,6 +45,10 @@ API access is turned off by default on all accounts. If you decide to use our AP
 * [Cancel Buy Order](buy-api.html#cancelling-a-buy-order)
 * [Mark Buy Order as Paid](buy-api.html#marking-a-buy-order-as-paid)
 
+## Wallet API
+* [Accounts](wallet-api.html#crypto-accounts)
+* [Payments and Transfers](wallet-api.html#payments-and-transfers)
+
 ## Merchant API
 
 If are using coins.ph to accept Bitcoin payments, please sign up here:
