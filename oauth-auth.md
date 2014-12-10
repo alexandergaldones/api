@@ -70,9 +70,10 @@ This flow is commonly used for applications that can't store the token in the cl
 Additionally, The `code` is used by the application server to retrieve an access token for a user. The `code` can only be used once per user. The application server can retrieve an `access_token` for the user by doing a POST request to the `/user/oathtoken` endpoint with the following parameters:
 
 * **client_id** - Select `show` on your chosen application's API Access dashboard. This is the API Key as displayed on the dialog.
-* **client_secret** - Select `show` on your chosen appication's API Access dashboard. This is Secret as displayed on the dialog.
+* **client_secret** - Select `show` on your chosen application's API Access dashboard. This is Secret as displayed on the dialog.
 * **code** - The `code` retrieved from the `redirect_uri`
 * **grant_type** - `authorization_code` is used to retrieve an access token.
+* **redirect_uri** - The `redirect_uri` as defined in your chosen application's API Access dashboard.
 
 Your application server should receive a json response with the key `access_token`, which could then be used for subsequent API calls by including it in an Authorization HTTP header:
 

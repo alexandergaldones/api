@@ -106,7 +106,7 @@ URL: `https://coins.ph/d/api/crypto-payments/`
 ```sh
 curl -X POST \
     -H 'Content-Type: application/json' \
-    -d '{"target_address"="address", "amount"=0.0001, "account": "2a"}' \
+    -d '{"target_address": "address", "amount": 0.0001, "account": "2a"}' \
     https://coins.ph/d/api/crypto-payments
 ```
 
