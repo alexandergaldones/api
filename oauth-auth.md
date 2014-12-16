@@ -55,6 +55,8 @@ This flow is commonly used for applications that store the token in the client. 
 Authorization: Bearer youraccesstoken
 ```
 
+#### Client Side Flow Example
+
 Example of a common client-side flow:
 
 1. Direct the user to https://coins.ph/user/api/authorize?client_id=yourclientid&response_type=token
@@ -75,11 +77,27 @@ Additionally, The `code` is used by the application server to retrieve an access
 * **grant_type** - `authorization_code` is used to retrieve an access token.
 * **redirect_uri** - The `redirect_uri` as defined in your chosen application's API Access dashboard.
 
-Your application server should receive a json response with the key `access_token`, which could then be used for subsequent API calls by including it in an Authorization HTTP header:
+#### Access Token
+
+Upon completing the request, your application server should receive a json response with the key `access_token`, which could then be used for subsequent API calls by including it in an Authorization HTTP header:
 
 ```
 Authorization: Bearer useraccesstoken
 ```
+
+#### Refresh Token
+
+In addition to the `access_token` being returned from the `/user/oauthtoken` endpoint, the json response also contains a `refresh_token` which can be used for getting a new `access_token`. This is usually used for getting a new `access_token` once it expires, or for invalidating the current `access_token` in exchange for a new one.
+
+Using the `refresh_token` is almost the same as using `code` to obtain an `access_token`. Issue a POST request to the same endpoint, `/user/oauthtoken`, with the following parameters:
+
+* **client_id** - Select `show` on your chosen application's API Access dashboard. This is the API Key as displayed on the dialog.
+* **client_secret** - Select `show` on your chosen application's API Access dashboard. This is Secret as displayed on the dialog.
+* **refresh_token** - The `refresh_token` retrieved from the previous POST request to `/user/oauthtoken`.
+* **grant_type** - `refresh_token` is used to use the `refresh_token` to retrieve a new access token.
+* **redirect_uri** - The `redirect_uri` as defined in your chosen application's API Access dashboard.
+
+#### Server Side Flow Example
 
 Example of a common server-side flow:
 
