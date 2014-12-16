@@ -67,17 +67,17 @@ Example of a common client-side flow:
 
 ### Server Side Flow
 
-This flow is commonly used for applications that can't store the token in the client. The developer's application server is responsible for keeping track of its client's tokens. To use this flow, follow the steps described in Application Authorization Flow, with the `response_type` parameter with the value `code`. The user will then be redirected to the `redirect_uri` you have provided, but instead of having an `access_token` parameter, it will have `code` attached.
+This flow is commonly used for applications that can't store the token in the client. The developer's application server is responsible for keeping track of its client's tokens. To use this flow, follow the steps described in Application Authorization Flow, with the `response_type` parameter with the value `code`. The user will then be redirected to the `redirect_uri` you have provided, but instead of having an `access_token` parameter, it will have `code` attached. Additionally, The `code` is used by the application server to retrieve an access token for a user. The `code` can only be used once per user.
 
-Additionally, The `code` is used by the application server to retrieve an access token for a user. The `code` can only be used once per user. The application server can retrieve an `access_token` for the user by doing a POST request to the `/user/oathtoken` endpoint with the following parameters:
+#### Access Token
+
+The application server can retrieve an `access_token` for the user by doing a POST request to the `/user/oathtoken` endpoint with the following parameters:
 
 * **client_id** - Select `show` on your chosen application's API Access dashboard. This is the API Key as displayed on the dialog.
 * **client_secret** - Select `show` on your chosen application's API Access dashboard. This is Secret as displayed on the dialog.
 * **code** - The `code` retrieved from the `redirect_uri`
 * **grant_type** - `authorization_code` is used to retrieve an access token.
 * **redirect_uri** - The `redirect_uri` as defined in your chosen application's API Access dashboard.
-
-#### Access Token
 
 Upon completing the request, your application server should receive a json response with the key `access_token`, which could then be used for subsequent API calls by including it in an Authorization HTTP header:
 
@@ -96,6 +96,12 @@ Using the `refresh_token` is almost the same as using `code` to obtain an `acces
 * **refresh_token** - The `refresh_token` retrieved from the previous POST request to `/user/oauthtoken`.
 * **grant_type** - `refresh_token` is used to use the `refresh_token` to retrieve a new access token.
 * **redirect_uri** - The `redirect_uri` as defined in your chosen application's API Access dashboard.
+
+Upon receiving the new `access_token`, API requests can proceed as normal by including the `access_token` in the `Authorization` header.
+
+```
+Authorization: Bearer useraccesstoken
+```
 
 #### Server Side Flow Example
 
