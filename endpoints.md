@@ -1,4 +1,7 @@
-# [Send Money API](sell-api.html)
+# Endpoint Index
+
+## [Send Money API](sell-api.html)
+
 Coins Send Money API is used to generate Sell orders.
 
 A unique Bitcoin Wallet address is generated for each order, and once payment is made the funds will be deposited into the specified bank account or other payment outlet.
@@ -67,7 +70,30 @@ Coins Buy Order API is used to generate, view, and edit Buy Orders.
     </tr>
 </table>
 
+## [Wallet API](wallet-api.html)
+
+Coins Wallet API is used to let third parties use Coins to store and send Bitcoins.
+
+<table>
+    <th>Resource</th>
+    <th>Method</th>
+    <th>Description</th>
+
+    <tr>
+        <td><a href="https://coins.ph/d/api/crypto-accounts/">/d/api/crypto-payments/</a></td>
+        <td>GET</td>
+        <td>Provides developers and users a way to retrieve their wallet details.</td>
+    </tr>
+
+    <tr>
+        <td><a href="https://coins.ph/d/api/crypto-payments/">/d/api/crypto-payments</a></td>
+        <td>POST</td>
+        <td>Provides developers and users a way to transfer funds from their wallet</td>
+    </tr>
+</table>
+
 ## [Merchant API](merchant-api.html)
+
 Coins Merchant API is used by developers to generate a payment page.
 
 <table>
