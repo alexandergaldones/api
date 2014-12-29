@@ -215,7 +215,9 @@ This endpoint requires authentication. Please see [API Authentication](auth.html
 #### Body
 
 * **btc_amount** - Transaction total amount in bitcoins.   _NOTE: The amount is in BTC format (900mbtc = .9 BTC)._
+* **amount** - Transaction total amount in the passed currency.
 * **currency** - ISO 4217 fiat currency symbol (ie, "PHP", "USD", "SGD").
+* **rate** - Equivalent amount in settlement currency of 1BTC. (This can be retrieved from the `sell_quote` API endpoint.) The system will respond with an error if this value is outdated.
 * **payment_outlet** - The **outlet_id** as provided by sell qoute api.
 * **other field** - Payment outlets have different required fields such as, and are not limited to, `first_name`, `bank_account_name`, `bank_account_number`, etc. These are listed as **required_fields** when retrieving a sell quote. Please refer to the [Payment Outlet Documentation](payment-outlets.html) and the [Sell Quote Documentation](sell-api.html) for more information.
 
@@ -226,9 +228,26 @@ URL: `https://coins.ph/api/v2/sellorder`
 ```sh
 # OAuth Request
 curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer yourtoken' -d '{"currency": "PHP", "btc_amount": 0.5, "payment_outlet": "bdo", "bank_account_name": "John Smith", "bank_account_number": 0123456789}' https://coins.ph/api/v2/sellorder
+```
 
+```sh
 # HMAC Request
 curl -X POST -H 'Content-Type: application/json' -H 'ACCESS_KEY: yourtoken' -H 'ACCESS_SIGNATURE requestsignature' -H 'ACCESS_NONCE 1234' -d '{"currency": "PHP", "btc_amount": 0.5, "payment_outlet": "bdo", "bank_account_name": "John Smith", "bank_account_number": 0123456789}' https://coins.ph/api/v2/sellorder
+```
+
+```sh
+# Create Sell Order with Rate
+
+# 1. Retrieve Rate from Sell Quote
+RATE=$(curl "https://coins.ph/api/v2/sellquote?btc_amount=1&currency=PHP" | python -c 'import json,sys; obj = json.load(sys.stdin); print obj["quote"]["rate"]')
+
+# 2. Create Sell Order
+curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer yourtoken' -d '{"currency": "PHP", "btc_amount": 0.5, "rate": '$RATE', "payment_outlet": "bdo", "bank_account_name": "John Smith", "bank_account_number": 0123456789}' https://coins.ph/api/v2/sellorder
+```
+
+```sh
+# Create Sell Order using Local Currency
+curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer yourtoken' -d '{"currency": "PHP", "amount": 100.50, "rate": '$RATE', "payment_outlet": "bdo", "bank_account_name": "John Smith", "bank_account_number": 0123456789}' https://coins.ph/api/v2/sellorder
 ```
 
 #### Example Response
