@@ -28,7 +28,7 @@ https://coins.ph/api/v2/sellquote
 URL: https://coins.ph/api/v2/sellquote?btc_amount=1&currency=PHP
 
 ```sh
-curl -X GET "https://coins.ph/api/v2/sellquote?btc_amount=1&currency=PHP"
+curl -X GET "https://coins.ph/api/v2/sellquote?btc_amount=1&amp;currency=PHP"
 ```
 
 ### Example Response
@@ -239,7 +239,7 @@ curl -X POST -H 'Content-Type: application/json' -H 'ACCESS_KEY: yourtoken' -H '
 # Create Sell Order with Rate
 
 # 1. Retrieve Rate from Sell Quote
-RATE=$(curl "https://coins.ph/api/v2/sellquote?btc_amount=1&currency=PHP" | python -c 'import json,sys; obj = json.load(sys.stdin); print obj["quote"]["rate"]')
+RATE=$(curl "https://coins.ph/api/v2/sellquote?btc_amount=1&amp;currency=PHP" | python -c 'import json,sys; obj = json.load(sys.stdin); print obj["quote"]["rate"]')
 
 # 2. Create Sell Order
 curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer yourtoken' -d '{"currency": "PHP", "btc_amount": 0.5, "rate": '$RATE', "payment_outlet": "bdo", "bank_account_name": "John Smith", "bank_account_number": 0123456789}' https://coins.ph/api/v2/sellorder

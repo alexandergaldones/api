@@ -24,7 +24,7 @@ https://coins.ph/api/v2/buyquote
 URL: https://coins.ph/api/v2/buyquote?btc_amount=1&currency=PHP
 
 ```sh
-curl -X GET "https://coins.ph/api/v2/buyquote?btc_amount=1&currency=PHP"
+curl -X GET "https://coins.ph/api/v2/buyquote?btc_amount=1&amp;currency=PHP"
 ```
 
 ### Example Response
