@@ -2,7 +2,7 @@
 
 Quotes can be directly accessed from this API, in addition to the `buyquote`
 and `sellorder` endpoints. This API is the preferred way to access
-multi-currency quotes, such as PHP-BTC or THB-BTC.
+multi-currency quotes, such as BTC-PHP or BTC-THB.
 
 https://quote.coins.ph/v1/
 
@@ -26,7 +26,7 @@ quoting for PHP, THB, HKD, and TWD to BTC.
 
 #### Endpoint
 
-https://quote.coins.ph/v1/markets/
+https://quote.coins.ph/v1/markets
 
 #### HTTP Method
 
@@ -42,7 +42,7 @@ https://quote.coins.ph/v1/markets/
 
 #### Example Responses
 
-URL: https://quote.coins.ph/v1/markets/
+URL: https://quote.coins.ph/v1/markets
 
 ```json
 {
@@ -83,7 +83,7 @@ URL: https://quote.coins.ph/v1/markets/
 }
 ```
 
-URL: https://quote.coins.ph/v1/markets/BTC-PHP/
+URL: https://quote.coins.ph/v1/markets/BTC-PHP
 
 ```json
 {
