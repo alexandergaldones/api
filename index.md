@@ -30,6 +30,10 @@ API access is turned off by default on all accounts. If you decide to use our AP
 * [Endpoints](endpoints.html)
 * [Register an application](https://coins.ph/user/api)
 
+## Quotes API
+
+* [Getting Market Rates](quotes-api.html)
+
 ## Send Money API
 
 * [Sell Quotes](sell-api.html#getting-quotes)
