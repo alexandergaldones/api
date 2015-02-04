@@ -22,7 +22,7 @@ By default API returns `10` objects per page. It can be changed by
 ### Markets
 
 Represents a quote ticker for several supported markets. Currently supports
-quoting for PHP, THB, HKD, and TWD to BTC.
+quoting for BTC to PHP, THB, HKD, or TWD.
 
 #### Endpoint
 
