@@ -32,7 +32,7 @@ API access is turned off by default on all accounts. If you decide to use our AP
 
 ## Quotes API
 
-* [Getting Market Rates](quotes-api.html)
+* [Getting Market Rates](quote-api.html)
 
 ## Send Money API
 
