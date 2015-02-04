@@ -40,12 +40,9 @@ https://quote.coins.ph/v1/markets/
 * **bid** - Rate when converting from fiat to product.
 * **ask** - Rate when converting from product to fiat.
 
-#### Example Requests
+#### Example Responses
 
 URL: https://quote.coins.ph/v1/markets/
-URL: https://quote.coins.ph/v1/markets/BTC-PHP/
-
-#### Example Responses
 
 ```json
 {
@@ -85,6 +82,8 @@ URL: https://quote.coins.ph/v1/markets/BTC-PHP/
   ]
 }
 ```
+
+URL: https://quote.coins.ph/v1/markets/BTC-PHP/
 
 ```json
 {
