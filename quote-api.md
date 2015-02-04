@@ -32,13 +32,13 @@ https://quote.coins.ph/v1/markets
 
 **GET**
 
-#### Parameters:
+#### Fields
 
 * **symbol** - Market symbol, such as BTC-PHP and BTC-THB.
-* **currency** - Fiat currency symbol.
-* **product** - Product of converting fiat.
-* **bid** - Rate when converting from fiat to product.
-* **ask** - Rate when converting from product to fiat.
+* **currency** - Fiat currency symbol. This is the currency the user will use to pay for the product.
+* **product** - Product of converting fiat. This is the thing that the user wants to obtain.
+* **bid** - The amount of currency that the user would get when a unit of product is sold. For instance, the user would get 9800 PHP when they sell 1 BTC. Take note that the rate fluctuates.
+* **ask** - The amount of currency to buy a unit of product. For instance, it would cost 10000 PHP to buy 1 BTC. Take note that the rate fluctuates.
 
 #### Example Responses
 
