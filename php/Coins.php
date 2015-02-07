@@ -67,12 +67,16 @@
       /*
         Send BTC via email or bitcoin address
       */
-      public function sendBitcoin($target_address, $amount, $account) {
+      public function sendBitcoin($target_address, $amount, $account=NULL) {
         $params = array();
         $params['target_address'] = $target_address;
         $params['amount'] = $amount;
 
-        $params['account'] = $this->getBTCCryptoAccount();
+        if ($account == NULL) {
+          $params['account'] = $this->getBTCCryptoAccount();
+        } else {
+          $params['account'] = $account;
+        }
 
         return $this->executeRequest(
           $this->URL_CRYPTO_PAYMENTS,
@@ -86,7 +90,6 @@
       */
       public function getBTCCryptoAccount() {
         $params = array();
-        $params['currency'] = "BTC";
         $response = $this->executeRequest(
           $this->URL_CRYPTO_ACCOUNTS,
           $params,
@@ -104,9 +107,11 @@
 
         if ($this->is_hmac) {
           $headers = $this->createHMACRequestHeaders(
-            $this->URL_SELL_ORDER, $params
+            $url, $params, $method
           );
-          $params = json_encode($params);
+          if ($method == "POST") {
+            $params = json_encode($params);
+          }
         } else {
           $headers = $this->createOAuthRequestHeaders();
         }
@@ -131,22 +136,37 @@
           'Accept' => 'application/json'
         );
       }
+
       /*
         Create request headers needed for HMAC / OAuth
       */
-      protected function createHMACRequestHeaders($url=NULL, $params=NULL) {
+      protected function createHMACRequestHeaders($url, $params, $method) {
         $nonce = intVal(round(microtime(true) * 1000));
-        $body = json_encode($params);
-        $message = sprintf("%d%s%s", $nonce, $url, $body);
+
+        if ($method == "GET") {
+          $message = sprintf("%d%s", $nonce, $url);
+        } else {
+          $body = json_encode($params);
+          $message = sprintf("%d%s%s", $nonce, $url, $body);
+        }
 
         $signature = hash_hmac('sha256', $message, $this->client_secret);
-        return array(
-          'ACCESS_SIGNATURE' => $signature,
-          'ACCESS_KEY' => $this->client_id,
-          'ACCESS_NONCE' => $nonce,
-          'Content-Type' => 'application/json',
-          'Accept' => 'application/json'
-        );
+
+        if ($method == "GET") {
+          return array(
+            'ACCESS_SIGNATURE' => $signature,
+            'ACCESS_KEY' => $this->client_id,
+            'ACCESS_NONCE' => $nonce
+          );
+        } else {
+          return array(
+            'ACCESS_SIGNATURE' => $signature,
+            'ACCESS_KEY' => $this->client_id,
+            'ACCESS_NONCE' => $nonce,
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json'
+          );
+        }
       }
 
       /*
