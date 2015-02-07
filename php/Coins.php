@@ -20,7 +20,7 @@
       protected $URL_SELL_ORDER = "https://coins.ph/api/v2/sellorder";
       protected $URL_SELL_QUOTE = "https://coins.ph/api/v2/sellquote";
       protected $URL_CRYPTO_PAYMENTS = "https://coins.ph/api/v3/crypto-payments";
-      protected $URL_CRYPTO_ACCOUNTS = "https://coins.ph/api/v3/crypto-accounts";
+      protected $URL_CRYPTO_ACCOUNTS = "https://coins.ph/d/api/crypto-accounts/";
 
       public function __construct() {}
 
@@ -91,12 +91,12 @@
       public function getBTCCryptoAccount() {
         $params = array();
         $response = $this->executeRequest(
-          $this->URL_CRYPTO_ACCOUNTS,
+          $this->URL_CRYPTO_ACCOUNTS."?currency=BTC",
           $params,
           $method="GET"
         );
         $responseObject = json_decode($response->body);
-        return $responseObject['crypto-accounts'][0]['id'];
+        return $responseObject->{'crypto-accounts'}[0]->id;
       }
 
       /*
@@ -118,7 +118,7 @@
 
         try {
           if ($method == "GET") {
-            return Requests::get($url, $headers, $params);
+            return Requests::get($url, $headers);
           } else {
             return Requests::post($url, $headers, $params);
           }
@@ -156,7 +156,8 @@
           return array(
             'ACCESS_SIGNATURE' => $signature,
             'ACCESS_KEY' => $this->client_id,
-            'ACCESS_NONCE' => $nonce
+            'ACCESS_NONCE' => $nonce,
+            'Accept' => 'application/json'
           );
         } else {
           return array(
