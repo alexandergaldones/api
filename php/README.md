@@ -34,8 +34,19 @@ Sending Bitcoin requires two parameters:
 #### Signature
 
 ```
-$coins->sendBitcoin($target_address, $amount, $account)
+$response = $coins->sendBitcoin($target_address, $amount, $account)
 ```
+
+#### Returns
+
+This returns a `response` object from the `requests` library. The response body should
+be decoded as json, like so:
+
+```
+$responseObj = json_decode($response->body);
+```
+
+This gives you an associative array of the response.
 
 ### Sendmoney
 
@@ -56,5 +67,16 @@ For more information about the sendmoney request body, please see the sendmoney
 #### Signature
 
 ```
-$coins->sendMoney($params)
+$response = $coins->sendMoney($params)
 ```
+
+#### Returns
+
+This returns a `response` object from the `requests` library. The response body should
+be decoded as json, like so:
+
+```
+$responseObj = json_decode($response->body);
+```
+
+This gives you an associative array of the response.
