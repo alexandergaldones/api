@@ -210,7 +210,7 @@ This endpoint requires authentication. Please see [API Authentication](auth.html
 
 #### Endpoint
 
-`https://coins.ph/api/v2/sellorder/<order_id>`
+`https://coins.ph/api/v2/sellorder/`
 
 #### Body
 
