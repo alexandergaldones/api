@@ -61,3 +61,7 @@ If are using coins.ph to accept Bitcoin payments, please sign up here:
 * [Merchant API reference](merchant-api.html)
 * [Magento plugin](https://github.com/coinsph/coins-magento)
 * [Merchant registration](https://coins.ph/merchants/signup)
+
+## Use Case Examples
+
+* [Sending Phone Load](send-load.html)
