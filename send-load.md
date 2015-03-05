@@ -8,17 +8,27 @@ makes this possible by converting Bitcoins into phone load.
 
 * A properly set up API key
 * [Authentication](auth.html)
-* Sender must have BTC balance
+* Sender must have either BTC or PHP balance
+
+## Accepted Currencies
+
+Load can be paid using the user's BTC balance, or PHP balance. To pay using
+BTC, the `pay_with_wallet` parameter should indicate `BTC`. Conversely, `PBTC`
+should be indicated when `PHP` would be used to pay for the load. However,
+please do take note that regardless of the currency to be used for payment,
+the current `BTC` conversion rate should be indicated in the `btc_amount`
+parameter.
 
 ## Using the Sell API to Send Load
 
 Sending load is a `POST` request to the `sellorder` endpoint. The body must have:
 
-* payment_outlet: This can either be `load-globe`, `load-smart`, or `load-suncell`.
-* currency_amount_locked: The amount of load to send.
-* pay_with_wallet: The user's wallet to use to pay for the load.
-* phone_number_load: The phone number to send load to.
-* btc_amount: Converted BTC amount of `currency_amount_locked`. Please see the [Sell Quote API](sell-api.html) on how to convert from fiat to BTC.
+* `payment_outlet`: This can either be `load-globe`, `load-smart`, or `load-suncell`.
+* `currency_amount_locked`: The amount of load to send.
+* `currency`: The medium of exchange to use for buying load. Can either be `BTC` or `PHP`.
+* `pay_with_wallet`: The user's wallet to use to pay for the load. Can either be `BTC` or `PBTC`.
+* `phone_number_load`: The phone number to send load to.
+* `btc_amount`: Converted BTC amount of `currency_amount_locked`. Please see the [Sell Quote API](sell-api.html) on how to convert from fiat to BTC.
 
 ```
 https://coins.ph/api/v2/sellorder
