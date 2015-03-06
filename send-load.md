@@ -6,7 +6,7 @@ makes this possible by converting Bitcoins into phone load.
 
 ## Prerequisites
 
-* A properly set up API key
+* A properly set up [API key](https://coins.ph/user/api)
 * [Authentication](auth.html)
 * Sender must have either BTC or PHP balance
 
