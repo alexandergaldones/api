@@ -18,7 +18,7 @@ https://coins.ph/api/v2/sellquote
 
 ### Parameters
 
-* **btc_amount** (optional)- Mutually exclusive with `amount`. Either this, or `amount` should be present in the request. The total amount in Bitcoins, as provided by the user. _NOTE: The amount is in BTC format (900mbtc = .9 BTC)._
+* **btc_amount** (optional) - Mutually exclusive with `amount`. Either this, or `amount` should be present in the request. The total amount in Bitcoins, as provided by the user. _NOTE: The amount is in BTC format (900mbtc = .9 BTC)._
 * **amount** (optional) - Mutually exclusive with `btc_amount`. Either this, or `btc_amount` should be present in the request. The total amount in Fiat currency. Use this if you prefer specifying amounts in fiat instead of BTC.
 * **currency** - An ISO 4217 fiat currency symbol (ie, "PHP", "USD", "SGD"). If `btc_amount` is provided instead of `amount`, this is the currency to which the BTC price will be converted into. Otherwise, if `amount` is specified instead of `btc_amount`, this is the currency of the specified amount.
 * **full** (optional, defaults to `False`) - Show the `required_fields` for each payment outlet as an array of {`id`, `name`} objects. This accepts either `True` or `False`. When not provided or if the value is `False`, the `required_fields` for each Payment Outlet are returned as an array of `id` strings. For more information about `required_fields`, please refer to the [Payment Outlet Documentation](payment-outlets.html).

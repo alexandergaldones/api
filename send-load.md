@@ -23,12 +23,12 @@ parameter.
 
 Sending load is a `POST` request to the `sellorder` endpoint. The body must have:
 
-* `payment_outlet`: This can either be `load-globe`, `load-smart`, or `load-suncell`.
-* `currency_amount_locked`: The amount of load to send.
-* `currency`: The medium of exchange to use for buying load. Can either be `BTC` or `PHP`.
-* `pay_with_wallet`: The user's wallet to use to pay for the load. Can either be `BTC` or `PBTC`.
-* `phone_number_load`: The phone number to send load to.
-* `btc_amount`: Converted BTC amount of `currency_amount_locked`. Please see the [Sell Quote API](sell-api.html) on how to convert from fiat to BTC.
+* **payment_outlet** - This can either be `load-globe`, `load-smart`, or `load-suncell`.
+* **currency_amount_locked** - The amount of load to send.
+* **currency** - The medium of exchange to use for buying load. Can either be `BTC` or `PHP`.
+* **pay_with_wallet** - The user's wallet to use to pay for the load. Can either be `BTC` or `PBTC`.
+* **phone_number_load** - The phone number to send load to.
+* **btc_amount** - Converted BTC amount of `currency_amount_locked`. Please see the [Sell Quote API](sell-api.html) on how to convert from fiat to BTC.
 
 ```
 https://coins.ph/api/v2/sellorder
