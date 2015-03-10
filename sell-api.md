@@ -265,9 +265,9 @@ curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer yourt
     },
     "id": "9d6eb8f98b754cd7aa9d8d930054cda1",
     "payment_outlet_id": "bdo",
-    "qr_img_uri": "https://chart.googleapis.com/chart?chl=bitcoin%3A1MRPzpzANvVaBneVsn5rEVqApHRmZq1SBV%3Famount%3D0.50000000&chs=400x400&cht=qr&choe=UTF-8&chld=L%7C0",
-    "user_uri": "https://localhost.dev:5000/sellorder/9d6eb8f98b754cd7aa9d8d930054cda1",
-    "wallet_address": "1MRPzpzANvVaBneVsn5rEVqApHRmZq1SBV"
+    "qr_img_uri": "https://some.url",
+    "user_uri": "https://coins.ph/sellorder/9d6eb8f98b754cd7aa9d8d930054cda1",
+    "wallet_address": "1234fasdf134"
   },
   "success": true
 }
