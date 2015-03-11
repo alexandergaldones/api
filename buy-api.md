@@ -243,12 +243,12 @@ curl -X POST\
         "canceled_time": null,
         "created_at": "1408420128",
         "currency_amount": "20",
-        "id": "48e34b7161c34d5eb45e8c42d6b04924",
+        "id": "dsff1434143",
         "marked_paid_time": null,
         "payment_method": "bpi_deposit",
         "rate": "20328",
         "status": "pending_payment",
-        "wallet_address": "13i4jDpG7vuX17Rvwe1TnbsGrkBo54Jga7"
+        "wallet_address": "ea231324a"
     },
     "success": true
 }
@@ -303,7 +303,7 @@ curl -X GET https://coins.ph/api/v2/buyorder/1o2r3d4e5r
         "payment_method": "bdo_deposit",
         "rate": "24489",
         "status": "pending_payment",
-        "wallet_address": "1GEw9EPAVpZAbZQqCe1nc19Uiq38J4QxXE"
+        "wallet_address": "kfkffh32432"
     },
     "success": true
 }
@@ -358,7 +358,7 @@ curl -X DELETE https://coins.ph/api/v2/buyorder/1o2r3d4e5r
         "payment_method": "bdo_deposit",
         "rate": "24489",
         "status": "pending_payment",
-        "wallet_address": "1GEw9EPAVpZAbZQqCe1nc19Uiq38J4QxXE"
+        "wallet_address": "233gdagagw23"
     },
     "success": true
 }
@@ -413,7 +413,7 @@ curl -X PUT https://coins.ph/api/v2/buyorder/1o2r3d4e5r
         "payment_method": "bdo_deposit",
         "rate": "24489",
         "status": "pending_payment",
-        "wallet_address": "1GEw9EPAVpZAbZQqCe1nc19Uiq38J4QxXE"
+        "wallet_address": "ds3838002838"
     },
     "success": true
 }
