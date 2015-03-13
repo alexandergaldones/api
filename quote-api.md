@@ -22,7 +22,7 @@ By default API returns `10` objects per page. It can be changed by
 ### Markets
 
 Represents a quote ticker for several supported markets. Currently supports
-quoting for BTC to PHP, THB, HKD, or TWD.
+quoting for BTC to PHP, THB, HKD, IDR, MYR, VND, or TWD.
 
 #### Endpoint
 
@@ -40,7 +40,7 @@ https://quote.coins.ph/v1/markets
 * **bid** - The amount of currency that the user would get when a unit of product is sold. For instance, the user would get 9800 PHP when they sell 1 BTC. Take note that the rate fluctuates.
 * **ask** - The amount of currency to buy a unit of product. For instance, it would cost 10000 PHP to buy 1 BTC. Take note that the rate fluctuates.
 
-#### Example Responses
+#### Getting All Market Quotes
 
 URL: https://quote.coins.ph/v1/markets
 
@@ -82,6 +82,11 @@ URL: https://quote.coins.ph/v1/markets
   ]
 }
 ```
+
+#### Getting Specific Market Quotes
+
+Provide the market symbol of BTC to fiat, for instance, `BTC-PHP`. Currently supports
+BTC to PHP, THB, HKD, IDR, MYR, VND, or TWD.
 
 URL: https://quote.coins.ph/v1/markets/BTC-PHP
 
