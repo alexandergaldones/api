@@ -40,7 +40,9 @@ https://quote.coins.ph/v1/markets
 * **bid** - The amount of currency that the user would get when a unit of product is sold. For instance, the user would get 9800 PHP when they sell 1 BTC. Take note that the rate fluctuates.
 * **ask** - The amount of currency to buy a unit of product. For instance, it would cost 10000 PHP to buy 1 BTC. Take note that the rate fluctuates.
 
-#### Getting All Market Quotes
+## Examples
+
+### Getting All Market Quotes
 
 URL: https://quote.coins.ph/v1/markets
 
@@ -83,7 +85,7 @@ URL: https://quote.coins.ph/v1/markets
 }
 ```
 
-#### Getting Specific Market Quotes
+### Getting Specific Market Quotes
 
 Provide the market symbol of BTC to fiat, for instance, `BTC-PHP`. Currently supports
 BTC to PHP, THB, HKD, IDR, MYR, VND, or TWD.
