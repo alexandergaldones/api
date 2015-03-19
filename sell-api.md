@@ -1,6 +1,12 @@
 # Send Money API
 
-Developers can use the send money API to send money across different countries, or to sell bitcoins to coins.ph. Each sell order generates a new wallet address where the user should send the Bitcoins. Once the Bitcoin payment is received, coins.ph will deposit the current market value of the Bitcoin into the specified "Payment Outlet". While coins.ph does not impose a fee on sending money itself, some payment outlets do impose fees based on a specified range. The payment outlet fee is added on the total price to be paid by the user.
+Developers can use the send money API to send money across different countries,
+or to sell bitcoins to coins.ph. Each sell order generates a new wallet
+address where the user should send the Bitcoins. Once the Bitcoin payment is
+received, coins.ph will deposit the current market value of the Bitcoin into
+the specified "Payment Outlet". While coins.ph does not impose a fee on sending
+money itself, some payment outlets do impose fees based on a specified range.
+The payment outlet fee is added on the total price to be paid by the user.
 
 
 ## Getting Quotes
