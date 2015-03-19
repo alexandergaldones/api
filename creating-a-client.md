@@ -14,4 +14,5 @@ Click "Save" button.
 
 And you're done, you just successfully created a client application in Coins.
 
-To get the client id, just simply go to [Coins API Dashboard](https://coins.ph/user/api) and click "edit" on the Action column of the application.
+To get the client id, just simply go to [Coins API Dashboard](https://coins.ph/user/api)
+and click "edit" on the Action column of the application.
