@@ -4,7 +4,9 @@
 
 Coins Send Money API is used to generate Sell orders.
 
-A unique Bitcoin Wallet address is generated for each order, and once payment is made the funds will be deposited into the specified bank account or other payment outlet.
+A unique Bitcoin Wallet address is generated for each order, and once payment is
+made the funds will be deposited into the specified bank account or other
+payment outlet.
 
 <table>
     <th>Resource</th>
@@ -72,7 +74,8 @@ Coins Buy Order API is used to generate, view, and edit Buy Orders.
 
 ## [Wallet API](wallet-api.html)
 
-Coins Wallet API is used to let third parties use Coins to store and send Bitcoins.
+Coins Wallet API is used to let third parties use Coins to store and send
+Bitcoins.
 
 <table>
     <th>Resource</th>
