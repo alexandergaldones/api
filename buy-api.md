@@ -1,10 +1,15 @@
 # Buy Order API
 
-Developers can use the Buy Order API to buy bitcoins from coins.ph. Each buy order should specify a payment method to which the fiat currency will be sent. Once coins.ph receives the currency, coins.ph will release the Bitcoins either to the user's coins.ph wallet, or to a provided wallet address.
+Developers can use the Buy Order API to buy bitcoins from coins.ph. Each buy
+order should specify a payment method to which the fiat currency will be
+sent. Once coins.ph receives the currency, coins.ph will release the
+Bitcoins either to the user's coins.ph wallet, or to a provided wallet address.
 
 ## Getting Quotes
 
-The Buy Quote API provides methods for a user to determine the current market value of Bitcoin when converted to a currency. Price is listed per mayment method supported by coins.ph.
+The Buy Quote API provides methods for a user to determine the current market
+value of Bitcoin when converted to a currency. Price is listed per payment
+method supported by coins.ph.
 
 ### HTTP Method
 
@@ -185,11 +190,13 @@ curl -X GET "https://coins.ph/api/v2/buyquote?btc_amount=1&amp;currency=PHP"
 
 ## Buy Order
 
-This endpoint supports creating new buy orders, retrieving existing ones, and marking the status of the buy order as paid.
+This endpoint supports creating new buy orders, retrieving existing ones, and
+marking the status of the buy order as paid.
 
 ### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
+This endpoint requires authentication. Please see
+[API Authentication](auth.html) for further details.
 
 ### Creating Buy Orders
 
@@ -258,7 +265,8 @@ curl -X POST\
 
 #### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
+This endpoint requires authentication. Please see
+[API Authentication](auth.html) for further details.
 
 #### HTTP Method
 
@@ -313,7 +321,8 @@ curl -X GET https://coins.ph/api/v2/buyorder/1o2r3d4e5r
 
 #### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
+This endpoint requires authentication. Please see
+[API Authentication](auth.html) for further details.
 
 #### HTTP Method
 
@@ -368,7 +377,8 @@ curl -X DELETE https://coins.ph/api/v2/buyorder/1o2r3d4e5r
 
 #### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
+This endpoint requires authentication. Please see
+[API Authentication](auth.html) for further details.
 
 #### HTTP Method
 
