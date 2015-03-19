@@ -1,12 +1,19 @@
 # HMAC Authentication
 
-HMAC Authentication can be used for authentication through the coins.ph API as yourself. While you can use this type of authentication for executing requests from users of your app (aside from yourself), we do not recommend it and would suggest to look into [OAuth2 Authentication](oauth-auth.html) instead, especially for client-side applications. This is because HMAC requires you to use your API secret to sign requests.
+HMAC Authentication can be used for authentication through the coins.ph API as
+yourself. While you can use this type of authentication for executing requests
+from users of your app (aside from yourself), we do not recommend it and would
+suggest to look into [OAuth2 Authentication](oauth-auth.html) instead,
+especially for client-side applications. This is because HMAC requires you to
+use your API secret to sign requests.
 
-You can get your API Key and secret by clicking "show" in your desired application in [API Access Dashboard](https://coins.ph/user/api).
+You can get your API Key and secret by clicking "show" in your desired
+application in [API Access Dashboard](https://coins.ph/user/api).
 
 ## Signing a request
 
-Each request made with HMAC Authentication needs to be signed. Please refer to the following code examples for signing a request.
+Each request made with HMAC Authentication needs to be signed. Please refer to
+the following code examples for signing a request.
 
 ### Python
 
