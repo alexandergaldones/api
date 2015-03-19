@@ -1,11 +1,13 @@
 # Merchant API
-Coins Merchant API is used by developers to generate a payment page. Our API helps to make calls to our platform easier to make.
+Coins Merchant API is used by developers to generate a payment page. Our API
+helps to make calls to our platform easier to make.
 
 ## Authentication
-Merchant API uses a shared-secret digest for authentication to verify a checkout payment request comes from a certain merchant and a "**digest**" parameter that is **SHA1 hash** including the shared secret key.
+Merchant API uses a shared-secret digest for authentication to verify a checkout
+payment request comes from a certain merchant and a "**digest**" parameter that
+is **SHA1 hash** including the shared secret key.
 
 **Digest Format:**  merchant_id:txnid:amount:currency:description:email_addr:secret_key
-
 **merchant_id** & **secret_key** will be given after you **[register](https://coins.ph/merchants/signup)** for a merchant account.
 
 To know more on becoming a merchant. You can visit our **[merchant](https://coins.ph/merchants)** page.
@@ -47,4 +49,5 @@ Merchant are required to setup urls for redirect and callback.
 
 Callback Status:  **F** - Expired, **P** - Pending Payment, **S** - Success
 
-For a callback, the digest we calculate is based on **txnid:refno:amount:status:message:secret_key**
+For a callback, the digest we calculate is based on
+**txnid:refno:amount:status:message:secret_key**
