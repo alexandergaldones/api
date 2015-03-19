@@ -11,7 +11,9 @@ The payment outlet fee is added on the total price to be paid by the user.
 
 ## Getting Quotes
 
-The Sell Quote API provides methods for a user to determine the current market value of Bitcoin when converted to a currency. Price is listed per payment outlet supported by coins.ph.
+The Sell Quote API provides methods for a user to determine the current market
+value of Bitcoin when converted to a currency. Price is listed per payment
+outlet supported by coins.ph.
 
 
 ### HTTP Method
@@ -188,11 +190,13 @@ curl -X GET "https://coins.ph/api/v2/sellquote?btc_amount=1&amp;currency=PHP"
 
 ## Sell Order
 
-Sending money and selling Bitcoins use the same API endpoint. This endpoint supports creating new sell orders, and retrieving existing ones.
+Sending money and selling Bitcoins use the same API endpoint. This endpoint
+supports creating new sell orders, and retrieving existing ones.
 
 ### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
+This endpoint requires authentication. Please see
+[API Authentication](auth.html) for further details.
 
 ### Creating Sell Orders
 
@@ -282,7 +286,8 @@ curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer yourt
 
 #### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
+This endpoint requires authentication. Please see
+[API Authentication](auth.html) for further details.
 
 #### HTTP Method
 
@@ -330,10 +335,10 @@ curl https://coins.ph/api/v2/sellorder/1o2r3d4e5r
         },
         "id": "1o2r3d4e5r",
         "payment_outlet_id": "bdo",
-        "qr_img_uri": "https://chart.googleapis.com/chart?chl=bitcoin%3A1FopCYYRs3Tg4YTjsT7XaBYKPg4pEAtv5a%3Famount%3D0.02500000&chs=400x400&cht=qr&choe=UTF-8&chld=L%7C0",
+        "qr_img_uri": "https://example.com/chart?chl=bitcoin%x%3Famount%3D0.02500000&chs=400x400&cht=qr&choe=UTF-8&chld=L%7C0",
         "status": "pending",
         "user_uri": "https://coins.ph/sellorder/1o2r3d4e5r",
-        "wallet_address": "1FopCYYRs3Tg4YTjsT7XaBYKPg4pEAtv5a"
+        "wallet_address": "13545sXfTsd"
     },
     "success": true
 }
