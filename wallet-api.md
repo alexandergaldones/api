@@ -1,14 +1,17 @@
 # Wallets API
 
-The Wallets API allows developers to integrate with Coins Crypto Accounts and build apps that can send and receive Bitcoins.
+The Wallets API allows developers to integrate with Coins Crypto Accounts and
+build apps that can send and receive Bitcoins.
 
 ##Crypto Accounts
 
-This endpoint enables users to see details about their crypto accounts. Crypto accounts are accounts that hold the user's balance, such as BTC.
+This endpoint enables users to see details about their crypto accounts. Crypto
+accounts are accounts that hold the user's balance, such as BTC.
 
 ### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
+This endpoint requires authentication. Please see
+[API Authentication](auth.html) for further details.
 
 
 Resource URL: https://coins.ph/d/api/crypto-accounts/
@@ -58,15 +61,18 @@ https://coins.ph/d/api/crypto-accounts?currency=BTC
 
 ##Payments and Transfers
 
-This endpoint allows sending of Bitcoins and retrieval of the user's transaction history
+This endpoint allows sending of Bitcoins and retrieval of the user's transaction
+history
 
 ### Authentication
 
-This endpoint requires authentication. Please see [API Authentication](auth.html) for further details.
+This endpoint requires authentication. Please see
+[API Authentication](auth.html) for further details.
 
 ### Transferring Bitcoins
 
-Transferring Bitcoins from one account to another can be done by doing a `POST` through this endpoint.
+Transferring Bitcoins from one account to another can be done by doing a
+`POST` through this endpoint.
 
 #### HTTP Method
 
