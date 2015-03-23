@@ -23,6 +23,9 @@ Please refer to a particular endpoint's documentation for more usage examples.
 For API support you can post a question in our
 [issue tracker](https://github.com/coinsph/api/issues).
 
+Please take note that all data from the examples provided may vary from actual
+production data.
+
 ## Creating a new application
 
 It is required to create a new application to get started with the Coins API.
@@ -43,12 +46,17 @@ keys have been compromised.
 
 * [Getting Market Rates](quote-api.html)
 
+## Payment Outlets API
+
+* [Payin Outlets](payin-outlets-api.html)
+* [Payout Outlets](payout-outlets-api.html)
+
 ## Send Money API
 
 * [Sell Quotes](sell-api.html#getting-quotes)
 * [Create Sell Order](sell-api.html#creating-sell-orders)
 * [View Sell Order](sell-api.html#retrieving-existing-sell-orders)
-* [Payment Outlets](payment-outlets.html)
+* [Supported Payout Outlets](payment-outlets.html)
 
 ## Buy Order API
 

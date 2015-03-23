@@ -1,12 +1,19 @@
-# Payment Outlets
+# Supported Payout Outlets
 
-Users can receive their fiat currency payouts via selected Payment Outlets.
-Coins.ph supports multiple Payment Outlets, and we are regularly adding
+Users can receive their fiat currency payouts via selected Payout Outlets.
+Coins.ph supports multiple Payout Outlets, and we are regularly adding
 additional payment outlets.
 
-## Payment Outlet Types
+This article describes the payout outlet data that the Sell Order API expects
+when submitting a request. If you want to retrieve payout outlets, you can do
+so through the [Sell Quote API](sell-api.html), which includes the fees that
+a payout outlet might have against a certain amount. If you would like to
+retrieve payout outlets without calculating for fees against an amount,
+you could do so through the [Payout Outlet API](payout-outlets-api.html).
 
-Payment Outlets are grouped into several categories. These categories are
+## Payout Outlet Types
+
+Payout Outlets are grouped into several categories. These categories are
 described in their respective sections.
 
 ### Bank
@@ -25,7 +32,7 @@ identifiers:
 * `bank_account_name` - Same as Account Holder Name as described above. This accepts unicode characters of an arbitrary length.
 * `bank_account_number` - Same as Bank Account Number as described above. This accepts unicode characters of an arbitrary length.
 
-Sell Orders that have a selected Payment Outlet option of this category should
+Sell Orders that have a selected Payout Outlet option of this category should
 include these fields in the request payload, like so:
 
 ```json
@@ -40,7 +47,7 @@ include these fields in the request payload, like so:
 
 #### Amount Limits
 
-Technically, Payment Outlets of this category do not have a minimum and a
+Technically, Payout Outlets of this category do not have a minimum and a
 maximum amount limit per transaction. However, usual bank policies still apply
 for higher amounts, and the recipient might need to ask the bank for reservation
 beforehand. It is the responsibility of the user/recipient to ask the bank for
@@ -72,7 +79,7 @@ For API calls, the required fields are translated into the following identifiers
 * `full_address` - Same as Full Address described above. This accepts unicode characters of an arbitrary length.
 * `phone_number_recipient` - Same as Phone Number described above. This accepts unicode characters of an arbitrary length.
 
-Sell Orders that have a selected Payment Outlet option of this category should
+Sell Orders that have a selected Payout Outlet option of this category should
 include these fields in the request payload, like so:
 
 ```json
@@ -93,7 +100,7 @@ range. These values are as of Oct. 21, 2014:
 
 <table>
     <thead>
-        <th>Payment Outlet</th>
+        <th>Payout Outlet</th>
         <th>Minimum</th>
         <th>Maximum</th>
     </thead>
@@ -150,7 +157,7 @@ For API calls, the required fields are translated into the following identifiers
 * `phone_number` - Same as GCash/Smart Money Card Number described above. This accepts unicode characters of an arbitrary length.
 * `account_holder_name` - Same as Account Holder Name described above. This accepts unicode characters of an arbitrary length.
 
-Sell Orders that have a selected Payment Outlet option of this category should include these fields in the request payload, like so:
+Sell Orders that have a selected Payout Outlet option of this category should include these fields in the request payload, like so:
 
 ```json
 {
@@ -169,7 +176,7 @@ These values are as of Oct. 21, 2014:
 
 <table>
     <thead>
-        <th>Payment Outlet</th>
+        <th>Payout Outlet</th>
         <th>Minimum</th>
         <th>Maximum</th>
     </thead>
@@ -216,7 +223,7 @@ For API calls, the required fields are translated into the following identifiers
 * `full_address` - Same as Full Address described above. This accepts unicode characters of an arbitrary length.
 * `phone_number_recipient` - Same as Phone Number described above. This accepts unicode characters of an arbitrary length.
 
-Sell Orders that have a selected Payment Outlet option of this category should
+Sell Orders that have a selected Payout Outlet option of this category should
 include these fields in the request payload, like so:
 
 ```json
@@ -236,7 +243,7 @@ values are as of Oct. 21, 2014:
 
 <table>
     <thead>
-        <th>Payment Outlet</th>
+        <th>Payout Outlet</th>
         <th>Minimum</th>
         <th>Maximum</th>
     </thead>
