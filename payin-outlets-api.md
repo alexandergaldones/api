@@ -7,6 +7,17 @@ payin outlet data, which includes their categories, and a table of fees.
 
 ## Getting Payin Outlets
 
+This endpoint returns payin outlets, with their types. A payin outlet has the
+following properties:
+
+* **id** - A unique identifier for the payin outlet
+* **payment_outlet_type** - The outlet's category. These are usually establishments where coins accepts fiat.
+* **name** - The outlet's name in human readable form.
+* **region** - An [ISO 3166-1 Alpha 2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the region where the outlet is located.
+* **help_text** - Optional text that further describes the outlet. May be null.
+* **help_link** - Optional help article that further describes the outlet. May be null.
+* **instructions** - Instructions on how the user should process payment through the outlet.
+
 ### HTTP Method
 
 **GET**
@@ -33,7 +44,7 @@ https://coins.ph/d/api/payin-outlets/
             "region": "PH",
             "help_text": "",
             "help_link": "",
-            "instructions": "Pay the money!"
+            "instructions": "Deposit to account 1234"
         },
         {
             "id": "bdo_deposit",
@@ -48,7 +59,7 @@ https://coins.ph/d/api/payin-outlets/
             "region": "PH",
             "help_text": "",
             "help_link": "",
-            "instructions": "Pay the money!"
+            "instructions": "Deposit to account 5169"
         }
     ],
     "meta": {
