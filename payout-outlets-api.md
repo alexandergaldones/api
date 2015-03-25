@@ -91,6 +91,20 @@ https://coins.ph/d/api/payout-outlets/
 
 ## Payout Outlet Categories
 
+Payout outlets are grouped into categories. Categories determine the required
+fields that payout outlets accept. The data gathered from these fields are
+used to process the payout. Payout outlet categories have the following
+properties:
+
+* **id** - Unique identifier for the payout outlet category.
+* **name** - The category's name in human readable form.
+* **fields** - A collection of fields that payment outlets of this category requires.
+* **fee_structure_description** - Describes how fees in this category are structured in general.
+* **payout_duration_description** - Describes how long it usually takes to process payouts to outlets of this category.
+
+A field is usually just an input field that accepts data. To see an example
+of how they are used, see the `POST` example on the (Sell Order API)[sell-api.html].
+
 ### HTTP Method
 
 **GET**

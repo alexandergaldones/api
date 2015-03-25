@@ -70,7 +70,18 @@ https://coins.ph/d/api/payin-outlets/
 }
 ```
 
-## Payout Outlet Categories
+## Payin Outlet Categories
+
+Payin outlets are grouped into categories. Unlike
+[Payout Outlet Categories](payout-outlets-api.md), payin outlet categories
+usually don't have required fields. Payin outlet categories have the following
+properties:
+
+* **id** - Unique identifier for the payout outlet category.
+* **name** - The category's name in human readable form.
+* **fields** - A collection of fields that payment outlets of this category requires.
+* **fee_structure_description** - Describes how fees in this category are structured in general.
+* **payout_duration_description** - Describes how long it usually takes to process BTC payouts to outlets of this category.
 
 ### HTTP Method
 
@@ -108,7 +119,7 @@ https://coins.ph/d/api/payin-outlet-categories/
 }
 ```
 
-## Payout Outlet Fees
+## Payin Outlet Fees
 
 ### HTTP Method
 
