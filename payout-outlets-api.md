@@ -163,6 +163,20 @@ https://coins.ph/d/api/payout-outlet-categories/
 
 ## Payout Outlet Fees
 
+Fees may apply on different payout outlets. If a payout outlet does have fees,
+it's either a fixed fee, or it may vary depending on the amount of transaction.
+Fees have the following properties:
+
+* **payment_outlet** - The payment outlet that owns the fee.
+* **currency** - Currency symbol of the fee.
+* **from_amount** - Starting amount where the fee applies.
+* **until_amount** - Highest amount where the fee applies.
+* **fee_amount** - A fixed fee amount for the range given by `from_amount` and `until_amount`.
+* **fee_percent** - A percentage of the transaction amount as a fee.
+
+The total fees is calculated as `transaction_amount * fee_percent + fee_amount`
+for a certain range given by `from_amount` and `until_amount`.
+
 ### HTTP Method
 
 **GET**
