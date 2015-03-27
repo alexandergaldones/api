@@ -26,6 +26,14 @@ following properties:
 
 https://coins.ph/d/api/payin-outlets/
 
+### Parameters
+
+* **payment_outlet_type** - A payment outlet type ID used to filter results.
+* **name** - Filter results by the given name.
+* **region** - Filter results based on the given region.
+* **is_enabled** - If `True`, results will not include disabled outlets.
+* **ui_view** - Filter results based on the view the outlet usually appears.
+
 ### Example Response
 
 ```json
