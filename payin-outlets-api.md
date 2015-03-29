@@ -160,16 +160,16 @@ https://coins.ph/d/api/payin-outlet-fees/
             "payment_outlet": "bdo_deposit",
             "currency": "PHP",
             "from_amount": "0",
-            "until_amount": "100000000",
-            "fee_amount": "0",
+            "until_amount": "1000",
+            "fee_amount": "10",
             "fee_percent": "0.01"
         },
         {
             "payment_outlet": "bpi_deposit",
             "currency": "PHP",
-            "from_amount": "0",
-            "until_amount": "100000",
-            "fee_amount": "100",
+            "from_amount": "1001",
+            "until_amount": "2000",
+            "fee_amount": "20",
             "fee_percent": "0"
         }
     ],
