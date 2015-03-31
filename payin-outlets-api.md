@@ -41,13 +41,7 @@ https://coins.ph/d/api/payin-outlets/
     "payin-outlets": [
         {
             "id": "citibank_deposit",
-            "payment_outlet_type": {
-                "id": "bank_deposit",
-                "name": "Bank Deposit",
-                "fields": [],
-                "fee_structure_description": null,
-                "payout_duration_description": null
-            },
+            "outlet_category": "bank_deposit",
             "name": "Citibank",
             "region": "PH",
             "help_text": "",

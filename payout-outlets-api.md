@@ -45,26 +45,7 @@ https://coins.ph/d/api/payout-outlets/
     "payout-outlets": [
         {
             "id": "egivecash",
-            "payment_outlet_type": {
-                "id": "atm_pickup",
-                "name": "ATM Pickup",
-                "fields": [
-                    {
-                        "payment_outlet_type_field_id": "recipient_full_name",
-                        "name": "Recipient Full Name",
-                        "help_text": "Recipient Full Name",
-                        "help_link": ""
-                    },
-                    {
-                        "payment_outlet_type_field_id": "recipient_mobile",
-                        "name": "Recipient Mobile Phone",
-                        "help_text": "Recipient Mobile Phone Number (e.g. 09178147839)",
-                        "help_link": ""
-                    }
-                ],
-                "fee_structure_description": null,
-                "payout_duration_description": null
-            },
+            "outlet_category": "atm_pickup",
             "name": "Security Bank eGiveCash",
             "region": "PH",
             "help_text": "",
@@ -73,20 +54,7 @@ https://coins.ph/d/api/payout-outlets/
         },
         {
             "id": "gcash",
-            "payment_outlet_type": {
-                "id": "phone_deposit",
-                "name": "Mobile Money",
-                "fields": [
-                    {
-                        "payment_outlet_type_field_id": "phone_number",
-                        "name": "Phone Number",
-                        "help_text": "Phone Number",
-                        "help_link": ""
-                    }
-                ],
-                "fee_structure_description": null,
-                "payout_duration_description": null
-            },
+            "outlet_category": "phone_deposit",
             "name": "Globe Cash",
             "region": "PH",
             "help_text": "",
@@ -131,7 +99,7 @@ https://coins.ph/d/api/payout-outlet-categories/
             "name": "Mobile Load",
             "fields": [
                 {
-                    "payment_outlet_type_field_id": "phone_number",
+                    "id": "phone_number",
                     "name": "Phone Number",
                     "help_text": "Phone Number",
                     "help_link": ""
@@ -204,7 +172,7 @@ https://coins.ph/d/api/payout-outlet-fees/
     },
     "payout-outlet-fees": [
         {
-            "payment_outlet": "bdo",
+            "outlet": "bdo",
             "currency": "PHP",
             "from_amount": "0",
             "until_amount": "1000",
@@ -212,7 +180,7 @@ https://coins.ph/d/api/payout-outlet-fees/
             "fee_percent": "0.01"
         },
         {
-            "payment_outlet": "bdo",
+            "outlet": "bdo",
             "currency": "PHP",
             "from_amount": "1001",
             "until_amount": "2000",
