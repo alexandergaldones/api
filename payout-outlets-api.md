@@ -1,5 +1,8 @@
 # Payout Outlets
 
+**Unstable**
+**We are currently making improvements on this new endpoint. Use at your own risk.**
+
 Payout outlets are establishments where users can cash out their Bitcoins
 through either coins.ph, or coins.co.th. This API allows users to get
 payout outlet data, which includes their categories, and a table of fees.
