@@ -13,7 +13,7 @@ This endpoint returns payout outlets, with their types. A payout outlet has the
 following properties:
 
 * **id** - A unique identifier for the payout outlet
-* **payment_outlet_type** - The outlet's category. These are usually establishments where the user can cash out their Bitcoins.
+* **outlet_category** - The outlet's category. These are usually establishments where the user can cash out their Bitcoins.
 * **name** - The outlet's name in human readable form.
 * **region** - An [ISO 3166-1 Alpha 2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the region where the outlet is located.
 * **help_text** - Optional text that further describes the outlet. May be null.
