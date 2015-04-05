@@ -105,15 +105,15 @@ https://coins.ph/d/api/payin-outlet-categories/
             "id": "bank_deposit",
             "name": "Bank Deposit",
             "fields": [],
-            "fee_structure_description": null,
-            "payout_duration_description": null
+            "fee_structure_description": "PHP 10 for every PHP 1000",
+            "payout_duration_description": "Same day payout"
         },
         {
             "id": "validated_deposit",
             "name": "Validated Bank Deposit",
             "fields": [],
-            "fee_structure_description": null,
-            "payout_duration_description": null
+            "fee_structure_description": "PHP 10 for every PHP 1000",
+            "payout_duration_description": "Same day payout"
         }
     ],
     "meta": {

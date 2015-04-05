@@ -108,8 +108,8 @@ https://coins.ph/d/api/payout-outlet-categories/
                     "help_link": ""
                 }
             ],
-            "fee_structure_description": null,
-            "payout_duration_description": null
+            "fee_structure_description": "PHP 10 for every PHP 1000",
+            "payout_duration_description": "Same day payout"
         },
         {
             "id": "atm_pickup",
@@ -128,8 +128,8 @@ https://coins.ph/d/api/payout-outlet-categories/
                     "help_link": ""
                 }
             ],
-            "fee_structure_description": null,
-            "payout_duration_description": null
+            "fee_structure_description": "PHP 10 for every PHP 1000",
+            "payout_duration_description": "Same day payout"
         }
     ],
     "meta": {
