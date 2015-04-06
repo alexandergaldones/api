@@ -80,6 +80,7 @@ properties:
 * **fields** - A collection of fields that payment outlets of this category requires.
 * **fee_structure_description** - Describes how fees in this category are structured in general.
 * **payout_duration_description** - Describes how long it usually takes to process payouts to outlets of this category.
+* **outlets** - An array of outlet IDs that belong to the category.
 
 A field is usually just an input field that accepts data. To see an example
 of how they are used, see the `POST` example on the (Sell Order API)[sell-api.html].
@@ -108,6 +109,10 @@ https://coins.ph/d/api/payout-outlet-categories/
                     "help_link": ""
                 }
             ],
+            "outlets": [
+                "load_globe",
+                "load_smart"
+            ],
             "fee_structure_description": "PHP 10 for every PHP 1000",
             "payout_duration_description": "Same day payout"
         },
@@ -127,6 +132,9 @@ https://coins.ph/d/api/payout-outlet-categories/
                     "help_text": "Recipient Mobile Phone Number (e.g. 09171234567)",
                     "help_link": ""
                 }
+            ],
+            "outlets": [
+                "egivecash"
             ],
             "fee_structure_description": "PHP 10 for every PHP 1000",
             "payout_duration_description": "Same day payout"

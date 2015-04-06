@@ -87,6 +87,7 @@ properties:
 * **fields** - A collection of fields that payment outlets of this category requires.
 * **fee_structure_description** - Describes how fees in this category are structured in general.
 * **payout_duration_description** - Describes how long it usually takes to process BTC payouts to outlets of this category.
+* **outlets** - An array of outlet IDs that belong to the category.
 
 ### HTTP Method
 
@@ -105,6 +106,10 @@ https://coins.ph/d/api/payin-outlet-categories/
             "id": "bank_deposit",
             "name": "Bank Deposit",
             "fields": [],
+            "outlets": [
+                "load_globe",
+                "load_smart"
+            ],
             "fee_structure_description": "PHP 10 for every PHP 1000",
             "payout_duration_description": "Same day payout"
         },
@@ -112,6 +117,10 @@ https://coins.ph/d/api/payin-outlet-categories/
             "id": "validated_deposit",
             "name": "Validated Bank Deposit",
             "fields": [],
+            "outlets": [
+                "load_globe",
+                "load_smart"
+            ],
             "fee_structure_description": "PHP 10 for every PHP 1000",
             "payout_duration_description": "Same day payout"
         }
