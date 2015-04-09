@@ -67,7 +67,7 @@ keys have been compromised.
 * [Mark Buy Order as Paid](buy-api.html#marking-a-buy-order-as-paid)
 
 ## Wallet API
-* [Accounts](wallet-api.html#crypto-accounts)
+* [Accounts](crypto-accounts-api.html)
 * [Payments](crypto-payments-api.html)
 * [Transfers](crypto-transfers-api.html)
 
