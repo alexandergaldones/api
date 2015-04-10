@@ -70,6 +70,7 @@ keys have been compromised.
 * [Accounts](crypto-accounts-api.html)
 * [Payments](crypto-payments-api.html)
 * [Transfers](crypto-transfers-api.html)
+* [Routes](crypto-routes-api.html)
 
 ## Merchant API
 
