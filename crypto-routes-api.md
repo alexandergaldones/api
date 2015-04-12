@@ -29,7 +29,7 @@ This endpoint requires authentication. Please see
 
 ## Endpoint
 
-`https://coins.ph/d/api/transfers/`
+`https://coins.ph/d/api/crypto-routes/`
 
 ## Creating Crypto Routes
 
