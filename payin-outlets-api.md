@@ -85,9 +85,10 @@ properties:
 * **id** - Unique identifier for the payout outlet category.
 * **name** - The category's name in human readable form.
 * **fields** - A collection of fields that payment outlets of this category requires.
-* **fee_structure_description** - Describes how fees in this category are structured in general.
-* **payout_duration_description** - Describes how long it usually takes to process BTC payouts to outlets of this category.
+* **fee_info** - Describes how fees in this category are structured in general.
+* **payout_duration** - Describes how long it usually takes to process payouts to outlets of this category.
 * **outlets** - An array of outlet IDs that belong to the category.
+* **outlet_names_subset** - A subset of outlet names that can be used as examples for the category.
 
 ### HTTP Method
 
@@ -107,22 +108,30 @@ https://coins.ph/d/api/payin-outlet-categories/
             "name": "Bank Deposit",
             "fields": [],
             "outlets": [
-                "load_globe",
-                "load_smart"
+                "bpi",
+                "bdo"
             ],
             "fee_structure_description": "PHP 10 for every PHP 1000",
-            "payout_duration_description": "Same day payout"
+            "payout_duration_description": "Same day payout",
+            "outlet_names_subset": [
+                "BPI",
+                "BDO"
+            ]
         },
         {
             "id": "validated_deposit",
             "name": "Validated Bank Deposit",
             "fields": [],
             "outlets": [
-                "load_globe",
-                "load_smart"
+                "bpi_family",
+                "citibank"
             ],
             "fee_structure_description": "PHP 10 for every PHP 1000",
-            "payout_duration_description": "Same day payout"
+            "payout_duration_description": "Same day payout",
+            "outlet_names_subset": [
+                "BPI Family",
+                "CitiBank"
+            ]
         }
     ],
     "meta": {
