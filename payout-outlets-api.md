@@ -94,6 +94,11 @@ of how they are used, see the `POST` example on the (Sell Order API)[sell-api.ht
 
 https://coins.ph/d/api/payout-outlet-categories/
 
+### Parameters
+
+* **region** - Filter to only the categories with outlets based on the given region.
+* **ui_view** - Filter to only the categories with outlets that belong to the given `ui_view`.
+
 ### Example Response
 
 ```json
