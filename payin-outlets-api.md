@@ -1,8 +1,5 @@
 # Payin Outlets
 
-**Unstable**
-**We are currently making improvements on this new endpoint. Use at your own risk.**
-
 Payin outlets are establishments where users can send cash to convert to
 Bitcoins. Payment received from these outlets will be processed by coins.ph,
 or coins.co.th, depending on the outlet's region. This API allows users to get
