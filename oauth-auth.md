@@ -63,28 +63,6 @@ parameter prefixed with a `?`). Instead, the first parameter is prefixed with a
 `#`. This prevents our servers from logging the access token. It also means
 that you must use custom application logic to retrieve the access token.
 
-### Client Side Flow
-
-This flow is commonly used for applications that store the token in the client.
-Follow the steps described in
-[Application Authorization Flow](oauth-auth.html#application-authorization-flow).
-Once you retrieve the `access_token`, it can be used by adding this HTTP header
-for every API call:
-
-```
-Authorization: Bearer youraccesstoken
-```
-
-#### Client Side Flow Example
-
-Example of a common client-side flow:
-
-1. Direct the user to https://coins.ph/user/api/authorize?client_id=yourclientid&response_type=token
-2. User selects "Allow"
-3. User is redirected to http://yourredirecturl.com/#access_token=someaccesstoken&token_type=Bearer&state=&scope=buyorder+sellorder+history
-4. Client application retrieves the token from the url
-5. Client application can now initiate an API call, with the header `Authorization: Bearer someaccesstoken` for each API call.
-
 ### Server Side Flow
 
 This flow is commonly used for applications that can't store the token in the
@@ -152,6 +130,28 @@ Example of a common server-side flow:
 6. The oauthtoken endopint responds with a json that contains the key `access_token`
 7. Application server stores this token in behalf of the user.
 8. The application server can now initiate API calls in behalf of the user, with the header `Authorization: Bearer useraccesstoken` for each API call.
+
+### Client Side Flow
+
+This flow is commonly used for applications that store the token in the client.
+Follow the steps described in
+[Application Authorization Flow](oauth-auth.html#application-authorization-flow).
+Once you retrieve the `access_token`, it can be used by adding this HTTP header
+for every API call:
+
+```
+Authorization: Bearer youraccesstoken
+```
+
+#### Client Side Flow Example
+
+Example of a common client-side flow:
+
+1. Direct the user to https://coins.ph/user/api/authorize?client_id=yourclientid&response_type=token
+2. User selects "Allow"
+3. User is redirected to http://yourredirecturl.com/#access_token=someaccesstoken&token_type=Bearer&state=&scope=buyorder+sellorder+history
+4. Client application retrieves the token from the url
+5. Client application can now initiate an API call, with the header `Authorization: Bearer someaccesstoken` for each API call.
 
 ## Initiating API calls with OAuth2
 
