@@ -99,6 +99,12 @@ Bitcoins.
         <td>POST</td>
         <td>Provides developers and users a way to transfer funds between different currencies</td>
     </tr>
+
+    <tr>
+        <td><a href="https://coins.ph/d/api/crypto-routes/">/d/api/crypto-routes</a></td>
+        <td>POST</td>
+        <td>Provides developers and users a way to automatically convert incoming funds</td>
+    </tr>
 </table>
 
 ## [Merchant API](merchant-api.html)
