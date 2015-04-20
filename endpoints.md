@@ -95,7 +95,7 @@ Bitcoins.
     </tr>
 
     <tr>
-        <td><a href="https://coins.ph/d/api/crypto-payments/">/d/api/crypto-transfers</a></td>
+        <td><a href="https://coins.ph/d/api/crypto-transfers/">/d/api/crypto-transfers</a></td>
         <td>POST</td>
         <td>Provides developers and users a way to transfer funds between different currencies</td>
     </tr>
