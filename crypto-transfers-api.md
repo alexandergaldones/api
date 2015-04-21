@@ -29,7 +29,7 @@ This endpoint requires authentication. Please see
 
 ## Endpoint
 
-`https://coins.ph/d/api/transfers/`
+`https://coins.ph/api/v3/transfers/`
 
 ## Body
 
@@ -39,13 +39,13 @@ This endpoint requires authentication. Please see
 
 ## Example Request
 
-URL: `https://coins.ph/d/api/transfers/`
+URL: `https://coins.ph/api/v3/transfers/`
 
 ```sh
 curl -X POST \
     -H 'Content-Type: application/json' \
     -d '{"target_address": "address", "amount": 0.0001, "account": "2a"}' \
-    https://coins.ph/d/api/transfers
+    https://coins.ph/api/v3/transfers
 ```
 
 ## Example Response

@@ -29,7 +29,7 @@ This endpoint requires authentication. Please see
 
 ## Endpoint
 
-`https://coins.ph/d/api/crypto-routes/`
+`https://coins.ph/api/v3/crypto-routes/`
 
 ## Creating Crypto Routes
 
@@ -44,13 +44,13 @@ This endpoint requires authentication. Please see
 
 ### Example Request
 
-URL: `https://coins.ph/d/api/crypto-routes/`
+URL: `https://coins.ph/api/v3/crypto-routes/`
 
 ```sh
 curl -X POST \
     -H 'Content-Type: application/json' \
     -d '{"monitored_address": "1a2b3c", "stock_address": "2a1b4c"}' \
-    https://coins.ph/d/api/crypto-routes
+    https://coins.ph/api/v3/crypto-routes
 ```
 
 ### Example Response
@@ -72,10 +72,10 @@ curl -X POST \
 
 ### Example Request
 
-URL: `https://coins.ph/d/api/crypto-routes/`
+URL: `https://coins.ph/api/v3/crypto-routes/`
 
 ```sh
-curl -X GET https://coins.ph/d/api/crypto-routes
+curl -X GET https://coins.ph/api/v3/crypto-routes
 ```
 
 ### Example Response
@@ -97,10 +97,10 @@ curl -X GET https://coins.ph/d/api/crypto-routes
 
 ### Example Request
 
-URL: `https://coins.ph/d/api/crypto-routes/1af3b1`
+URL: `https://coins.ph/api/v3/crypto-routes/1af3b1`
 
 ```sh
-curl -X DELETE https://coins.ph/d/api/crypto-routes/1af3b1
+curl -X DELETE https://coins.ph/api/v3/crypto-routes/1af3b1
 ```
 
 ### Example Response

@@ -77,7 +77,7 @@ token for a user. The `code` can only be used once per user.
 #### Access Token
 
 The application server can retrieve an `access_token` for the user by doing a
-POST request to the `/user/oathtoken` endpoint with the following parameters:
+POST request to the `/user/oauthtoken` endpoint with the following parameters:
 
 * **client_id** - Select `show` on your chosen application's API Access dashboard. This is the API Key as displayed on the dialog.
 * **client_secret** - Select `show` on your chosen application's API Access dashboard. This is Secret as displayed on the dialog.

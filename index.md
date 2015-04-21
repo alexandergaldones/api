@@ -68,7 +68,6 @@ keys have been compromised.
 
 ## Wallet API
 * [Accounts](crypto-accounts-api.html)
-* [Payments](crypto-payments-api.html)
 * [Transfers](crypto-transfers-api.html)
 * [Routes](crypto-routes-api.html)
 

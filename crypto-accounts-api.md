@@ -9,7 +9,7 @@ This endpoint requires authentication. Please see
 [API Authentication](auth.html) for further details.
 
 
-Resource URL: https://coins.ph/d/api/crypto-accounts/
+Resource URL: https://coins.ph/api/v3/crypto-accounts/
 
 ## HTTP Method
 
@@ -31,11 +31,11 @@ Resource URL: https://coins.ph/d/api/crypto-accounts/
 
 ## Endpoint
 
-`https://coins.ph/d/api/crypto-accounts/`
+`https://coins.ph/api/v3/crypto-accounts/`
 
 ## Example Request
 
-https://coins.ph/d/api/crypto-accounts?currency=BTC
+https://coins.ph/api/v3/crypto-accounts?currency=BTC
 
 ## Example Response
 
