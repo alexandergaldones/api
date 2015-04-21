@@ -228,7 +228,7 @@ This endpoint requires authentication. Please see
 * **currency** - ISO 4217 fiat currency symbol (ie, "PHP", "USD", "SGD").
 * **rate** - Equivalent amount in settlement currency of 1BTC. (This can be retrieved from the `sell_quote` API endpoint.) The system will respond with an error if this value is outdated.
 * **payment_outlet** - The **outlet_id** as provided by sell qoute api.
-* **pay_with_wallet** - Indicate whether this order should be paid using the user's wallet. Currently, the only valid value is "BTC".
+* **pay_with_wallet** - Indicate whether this order should be paid using the user's wallet. Currently, valid values are "BTC" (to pay with the BTC wallet) and "PBTC" (to pay with the PHP wallet).
 * **other field** - Payment outlets have different required fields such as, and are not limited to, `first_name`, `bank_account_name`, `bank_account_number`, etc. These are listed as **required_fields** when retrieving a sell quote. Please refer to the [Payment Outlet Documentation](payment-outlets.html) and the [Sell Quote Documentation](sell-api.html) for more information.
 
 #### Example Request
