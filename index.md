@@ -83,3 +83,4 @@ If are using coins.ph to accept Bitcoin payments, please sign up here:
 ## Usage Examples
 
 * [Sending Phone Load](send-load.html)
+* [Sending Money to Anyone](send-money.html)
