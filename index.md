@@ -42,6 +42,11 @@ keys have been compromised.
 * [Endpoints](endpoints.html)
 * [Register an application](https://coins.ph/user/api)
 
+## Usage Examples
+
+* [Sending Phone Load](send-load.html)
+* [Sending Money to Anyone](send-money.html)
+
 ## Quotes API
 
 * [Getting Market Rates](quote-api.html)
@@ -79,8 +84,3 @@ If are using coins.ph to accept Bitcoin payments, please sign up here:
 * [Merchant API reference](merchant-api.html)
 * [Magento plugin](https://github.com/coinsph/coins-magento)
 * [Merchant registration](https://coins.ph/merchants/signup)
-
-## Usage Examples
-
-* [Sending Phone Load](send-load.html)
-* [Sending Money to Anyone](send-money.html)
