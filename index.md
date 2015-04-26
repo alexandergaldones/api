@@ -51,19 +51,21 @@ keys have been compromised.
 
 * [Getting Market Rates](quote-api.html)
 
-## Payment Outlets API
+## API Reference
+
+### Payment Outlets API
 
 * [Payin Outlets](payin-outlets-api.html)
 * [Payout Outlets](payout-outlets-api.html)
 
-## Send Money API
+### Send Money API
 
 * [Sell Quotes](sell-api.html#getting-quotes)
 * [Create Sell Order](sell-api.html#creating-sell-orders)
 * [View Sell Order](sell-api.html#retrieving-existing-sell-orders)
 * [Supported Payout Outlets](payment-outlets.html)
 
-## Buy Order API
+### Buy Order API
 
 * [Buy Quotes](buy-api.html#getting-quotes)
 * [Create Buy Order](buy-api.html#creating-buy-orders)
@@ -71,12 +73,12 @@ keys have been compromised.
 * [Cancel Buy Order](buy-api.html#cancelling-a-buy-order)
 * [Mark Buy Order as Paid](buy-api.html#marking-a-buy-order-as-paid)
 
-## Wallet API
+### Wallet API
 * [Accounts](crypto-accounts-api.html)
 * [Transfers](crypto-transfers-api.html)
 * [Routes](crypto-routes-api.html)
 
-## Merchant API
+### Merchant API
 
 If are using coins.ph to accept Bitcoin payments, please sign up here:
 
