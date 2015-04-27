@@ -47,11 +47,12 @@ keys have been compromised.
 * [Sending Phone Load](send-load.html)
 * [Sending Money to Anyone](send-money.html)
 
-## Quotes API
+## API Reference
+
+### Quotes API
 
 * [Getting Market Rates](quote-api.html)
 
-## API Reference
 
 ### Payment Outlets API
 
