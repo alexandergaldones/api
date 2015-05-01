@@ -19,8 +19,8 @@
       protected $is_hmac;
       protected $URL_SELL_ORDER = "https://coins.ph/api/v2/sellorder";
       protected $URL_SELL_QUOTE = "https://coins.ph/api/v2/sellquote";
-      protected $URL_CRYPTO_PAYMENTS = "https://coins.ph/api/v3/crypto-payments";
-      protected $URL_CRYPTO_ACCOUNTS = "https://coins.ph/d/api/crypto-accounts/";
+      protected $URL_CRYPTO_PAYMENTS = "https://coins.ph/api/v3/crypto-payments/";
+      protected $URL_CRYPTO_ACCOUNTS = "https://coins.ph/api/v3/crypto-accounts/";
 
       public function __construct() {}
 
@@ -89,9 +89,9 @@
         Get BTC Crypto account
       */
       public function getBTCCryptoAccount() {
-        $params = array();
+        $params = array("currency"=>"BTC");
         $response = $this->executeRequest(
-          $this->URL_CRYPTO_ACCOUNTS."?currency=BTC",
+          $this->URL_CRYPTO_ACCOUNTS,
           $params,
           $method="GET"
         );
@@ -105,13 +105,17 @@
       protected function executeRequest($url, $params, $method="GET") {
         Requests::register_autoloader();
 
+        if ($method == "GET"){
+          $url = $url."?".http_build_query($params);
+        }
+
         if ($this->is_hmac) {
-          $headers = $this->createHMACRequestHeaders(
-            $url, $params, $method
-          );
           if ($method == "POST") {
             $params = json_encode($params);
           }
+          $headers = $this->createHMACRequestHeaders(
+            $url, $params, $method
+          );
         } else {
           $headers = $this->createOAuthRequestHeaders();
         }
@@ -146,7 +150,7 @@
         if ($method == "GET") {
           $message = sprintf("%d%s", $nonce, $url);
         } else {
-          $body = json_encode($params);
+          $body = $params;
           $message = sprintf("%d%s%s", $nonce, $url, $body);
         }
 
