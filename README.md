@@ -1,3 +1,20 @@
+About coins.ph
+==============
+Coins.ph is a mobile platform connecting 300+ million people in Southeast Asia who are currently out
+of reach for traditional banking with services from existing banks and financial product providers.
+Our platform utilizes existing retail infrastructure (10,000+ locations) for deposits and withdrawals,
+cutting down on one of the biggest cost components of traditional retail banking. Founded in 2014,
+Coins.ph now processes thousands of transactions per day, including remittances, bills payment,
+mobile top-ups, and other services provided by third-party covered financial institutions. We recently
+launched Teller, the first human ATM network that extends the reach of financial institutions beyond
+their existing branch infrastructure.
+
+We are driven by the desire to influence people’s lives.
+
+For more information check out https://coins.ph/careers
+
+
+
 API Examples
 ==============
 
