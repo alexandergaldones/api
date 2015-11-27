@@ -50,6 +50,41 @@ PHP,100,bpi,PBTC,John Doe,1234567890
 PHP,150,bdo,PBTC,Alice Wonderland,0987654321
 ```
 
+## Bank Codes
+
+These are currently the available bank codes:
+
+ bpi_family         | BPI Family
+ eastwest           | EastWest Bank
+ hsbc               | HSBC
+ citi               | Citibank N.A.
+ bdo_cashcard       | BDO Cash Card
+ bpi                | BPI
+ allied             | Allied Bank
+ UCPB               | UCPB
+ metrobank          | Metrobank
+ rcbc               | RCBC
+ rcbc-savings       | RCBC Savings
+ securitybank       | Security Bank
+ security-savings   | Security Bank Savings
+ psbank             | PSBank
+ pbcom              | PBCom
+ pnb                | PNB
+ union_bank         | Union Bank of the Philippines
+ asiaunited         | Asia United Bank
+ wealth             | WealthBank
+ gsisfamily         | GSIS Family Bank
+ standard_chartered | Standard Chartered
+ landbank           | Land Bank
+ robinsons          | Robinsons Bank
+ china_bank         | China Bank
+ maybank            | Maybank
+ planters           | Planters Bank
+ bdo                | BDO
+
+
+## How the file format works
+
 This will form request bodies as:
 
 ```
